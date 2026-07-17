@@ -8,9 +8,10 @@ export const SITE = {
 
   testflightUrl: 'https://testflight.apple.com/join/qMUpceYp',
 
-  // Currently unused: the Android buttons are disabled ("coming soon").
-  // Re-link this when the Android beta ships.
-  androidApkUrl: 'https://github.com/OkCalis/Dream/releases',
+  // The beta APK is hosted on the site itself (public/seklio.apk) for now.
+  // Long-term plan: move it to GitHub Releases and point this at
+  // https://github.com/OkCalis/<repo>/releases/latest/download/seklio.apk
+  androidApkUrl: '/seklio.apk',
 
   contactEmail: 'support@sekl.io',
 } as const;

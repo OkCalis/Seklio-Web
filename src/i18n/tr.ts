@@ -28,7 +28,7 @@ export const tr: Dict = {
       'Seklio, yakındaki telefonları Bluetooth ve Wi-Fi üzerinden doğrudan birbirine bağlar; mesajlarınız cihazdan cihaza uzanan bir örgü ağ üzerinden taşınır. Sunucu yok, hesap yok, telefon numarası yok — ve her şey uçtan uca şifreli.',
     ctaIos: 'iOS betasına katıl',
     ctaAndroid: 'Android APK indir',
-    note: 'Ücretsiz · iOS açık betası TestFlight’ta · Android çok yakında',
+    note: 'Ücretsiz · iOS açık betası TestFlight’ta · Android beta APK',
   },
 
   comingSoon: 'Çok yakında',
@@ -122,7 +122,7 @@ export const tr: Dict = {
     iosBody: 'TestFlight üzerinden açık beta. TestFlight uygulamasını kurun, tek dokunuşla katılın.',
     iosCta: 'TestFlight’ta katıl',
     androidTitle: 'Android',
-    androidBody: 'Android betası yolda — aynı örgü ağ, aynı açık protokol.',
+    androidBody: 'Beta APK, doğrudan buradan indirilebilir. Yükleyin ve örgü ağa katılın.',
     androidCta: 'APK indir',
   },
 
@@ -160,7 +160,7 @@ export const tr: Dict = {
       },
       {
         q: 'Android sürümü var mı?',
-        a: 'Henüz değil — Android betası üzerinde çalışılıyor ve çok yakında hazır olacak. iOS şu anda TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşacak, yani aynı örgü ağa katılacaklar.',
+        a: 'Evet — beta APK’yı doğrudan sekl.io’dan indirebilirsiniz. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
       },
       {
         q: 'Premium ne katıyor?',
