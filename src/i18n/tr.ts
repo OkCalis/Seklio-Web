@@ -4,9 +4,9 @@ export const tr: Dict = {
   meta: {
     landingTitle: 'Seklio — İnternete ihtiyaç duymayan mesajlaşma',
     landingDescription:
-      'Seklio sunucusuz bir mesh mesajlaşma uygulamasıdır. Yakındaki telefonlar Bluetooth ve Wi-Fi üzerinden bağlanır, uçtan uca şifreli mesajları cihazdan cihaza iletir. Sunucu yok, hesap yok, telefon numarası yok.',
+      'Seklio sunucusuz bir örgü ağ mesajlaşma uygulamasıdır. Yakındaki telefonlar Bluetooth ve Wi-Fi üzerinden bağlanır, uçtan uca şifreli mesajları cihazdan cihaza iletir. Sunucu yok, hesap yok, telefon numarası yok.',
     faqTitle: 'SSS — Seklio',
-    faqDescription: 'Sunucusuz mesh mesajlaşma uygulaması Seklio hakkında sıkça sorulan sorular.',
+    faqDescription: 'Sunucusuz örgü ağ mesajlaşma uygulaması Seklio hakkında sıkça sorulan sorular.',
     privacyTitle: 'Gizlilik Politikası — Seklio',
     privacyDescription: 'Seklio’nun gizlilik politikası: sunucu yok, dolayısıyla toplanacak bir şey de yok.',
     supportTitle: 'Destek — Seklio',
@@ -25,7 +25,7 @@ export const tr: Dict = {
     badge: 'İnternet gerekmez',
     title: 'İnternete ihtiyaç duymayan mesajlaşma.',
     subtitle:
-      'Seklio, yakındaki telefonları Bluetooth ve Wi-Fi üzerinden doğrudan birbirine bağlar; mesajlarınız cihazdan cihaza örülen bir ağ üzerinden taşınır. Sunucu yok, hesap yok, telefon numarası yok — ve her şey uçtan uca şifreli.',
+      'Seklio, yakındaki telefonları Bluetooth ve Wi-Fi üzerinden doğrudan birbirine bağlar; mesajlarınız cihazdan cihaza uzanan bir örgü ağ üzerinden taşınır. Sunucu yok, hesap yok, telefon numarası yok — ve her şey uçtan uca şifreli.',
     ctaIos: 'iOS betasına katıl',
     ctaAndroid: 'Android APK indir',
     note: 'Ücretsiz · iOS açık betası TestFlight’ta · Android çok yakında',
@@ -45,7 +45,7 @@ export const tr: Dict = {
       {
         title: 'Mesajlar cihazdan cihaza seker',
         body:
-          'Seklio çalıştıran her telefon, mühürlü zarfları bir sonrakine iletir. Mesajlarınız telefondan telefona seke seke, doğrudan menzil dışındaki arkadaşlarınıza bile ulaşır — mesh dediğimiz şey bu.',
+          'Seklio çalıştıran her telefon, mühürlü zarfları bir sonrakine iletir. Mesajlarınız telefondan telefona seke seke, doğrudan menzil dışındaki arkadaşlarınıza bile ulaşır — örgü ağ dediğimiz şey bu.',
       },
       {
         title: 'Yalnızca alıcı okuyabilir',
@@ -72,7 +72,7 @@ export const tr: Dict = {
       {
         icon: 'offline',
         title: 'Çekim olmadan çalışır',
-        body: 'Kalabalık etkinlikler, kampüsler, uçuşlar, dağ başları, elektrik kesintileri — şebekenin yetmediği her yerde mesh çalışmaya devam eder.',
+        body: 'Kalabalık etkinlikler, kampüsler, uçuşlar, dağ başları, elektrik kesintileri — şebekenin yetmediği her yerde örgü ağ çalışmaya devam eder.',
       },
       {
         icon: 'clock',
@@ -122,13 +122,13 @@ export const tr: Dict = {
     iosBody: 'TestFlight üzerinden açık beta. TestFlight uygulamasını kurun, tek dokunuşla katılın.',
     iosCta: 'TestFlight’ta katıl',
     androidTitle: 'Android',
-    androidBody: 'Android betası yolda — aynı mesh, aynı açık protokol.',
+    androidBody: 'Android betası yolda — aynı örgü ağ, aynı açık protokol.',
     androidCta: 'APK indir',
   },
 
   faq: {
     title: 'Sıkça sorulan sorular',
-    subtitle: 'Mesh’e katılmadan önce herkesin sorduğu her şey.',
+    subtitle: 'Örgü ağa katılmadan önce herkesin sorduğu her şey.',
     items: [
       {
         q: 'Seklio internete ihtiyaç duyar mı?',
@@ -136,7 +136,7 @@ export const tr: Dict = {
       },
       {
         q: 'Menzili ne kadar?',
-        a: 'Doğrudan bağlantı, Bluetooth’un ya da yerel Wi-Fi ağınızın eriştiği yere kadar uzanır. Ama mesajlar orada durmaz: her telefon onları bir sonrakine iletir, yani gerçek menziliniz bağlı mesh’in tamamıdır — bir mesaj alıcısını bulmak için 7 telefona kadar (duyurularda 15) sekebilir.',
+        a: 'Doğrudan bağlantı, Bluetooth’un ya da yerel Wi-Fi ağınızın eriştiği yere kadar uzanır. Ama mesajlar orada durmaz: her telefon onları bir sonrakine iletir, yani gerçek menziliniz bağlı örgü ağın tamamıdır — bir mesaj alıcısını bulmak için 7 telefona kadar (duyurularda 15) sekebilir.',
       },
       {
         q: 'Gerçekten gizli mi?',
@@ -160,7 +160,7 @@ export const tr: Dict = {
       },
       {
         q: 'Android sürümü var mı?',
-        a: 'Henüz değil — Android betası üzerinde çalışılıyor ve çok yakında hazır olacak. iOS şu anda TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşacak, yani aynı mesh’e katılacaklar.',
+        a: 'Henüz değil — Android betası üzerinde çalışılıyor ve çok yakında hazır olacak. iOS şu anda TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşacak, yani aynı örgü ağa katılacaklar.',
       },
       {
         q: 'Premium ne katıyor?',
@@ -195,7 +195,7 @@ export const tr: Dict = {
         h: 'Cihazınızda kalanlar',
         ps: [
           'Profiliniz (kullanıcı adı, avatar, isteğe bağlı yaş beyanı), sohbetleriniz, anahtarlarınız ve ayarlarınız telefonunuzda yerel olarak, cihazınızın güvenlik mekanizmalarıyla (Keychain / Keystore) korunarak saklanır.',
-          'Alıcılarla paylaştığınız mesajlar, her mesajlaşma uygulamasında olduğu gibi onların cihazlarında da bulunur. Henüz teslim edilmemiş mesajların şifreli kopyaları, mesh’teki aracı telefonlarda geçici olarak bekleyebilir — bu telefonlar onları okuyamaz.',
+          'Alıcılarla paylaştığınız mesajlar, her mesajlaşma uygulamasında olduğu gibi onların cihazlarında da bulunur. Henüz teslim edilmemiş mesajların şifreli kopyaları, örgü ağdaki aracı telefonlarda geçici olarak bekleyebilir — bu telefonlar onları okuyamaz.',
         ],
       },
       {
@@ -263,7 +263,7 @@ export const tr: Dict = {
   langNames: { en: 'English', tr: 'Türkçe' },
 
   footer: {
-    tagline: 'Sunucusuz mesh mesajlaşma. Hesap yok, sunucu yok — sadece birbirine yardım eden telefonlar.',
+    tagline: 'Sunucusuz örgü ağ mesajlaşması. Hesap yok, sunucu yok — sadece birbirine yardım eden telefonlar.',
     product: 'Ürün',
     resources: 'Kaynaklar',
     legal: 'Gizlilik ve Destek',
