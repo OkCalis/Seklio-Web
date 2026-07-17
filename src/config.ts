@@ -12,7 +12,7 @@ export const SITE = {
   // TODO: replace with the real GitHub repo / releases page for the Android APK.
   androidApkUrl: 'https://github.com/OkCalis/REPLACE_ME/releases/latest',
 
-  contactEmail: 'okancalis@outlook.com',
+  contactEmail: 'support@sekl.io',
 } as const;
 
 export const LOCALES = ['en', 'tr'] as const;
