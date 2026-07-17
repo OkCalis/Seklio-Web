@@ -26,22 +26,10 @@ export const en = {
       'Seklio connects nearby phones directly over Bluetooth and Wi-Fi, forming a mesh that carries your messages from device to device. No servers, no accounts, no phone numbers — and everything is end-to-end encrypted.',
     ctaIos: 'Join the iOS beta',
     ctaAndroid: 'Get the Android APK',
-    note: 'Free · iOS public beta on TestFlight · Android beta APK on GitHub',
+    note: 'Free · iOS public beta on TestFlight · Android coming soon',
   },
 
-  mockup: {
-    contactName: '@deniz',
-    contactStatus: 'nearby · via mesh',
-    banner: 'No internet — connected through the mesh',
-    messages: [
-      { in: true, text: 'Signal’s completely gone up here 😅' },
-      { in: false, text: 'Doesn’t matter, this goes phone to phone' },
-      { in: true, text: 'Wait, no bars and it still delivers?' },
-      { in: false, text: 'Yep — no servers at all. Meet at the gate at 7?' },
-      { in: true, text: 'Deal 👍' },
-    ],
-    inputPlaceholder: 'Message',
-  },
+  comingSoon: 'Coming soon',
 
   how: {
     title: 'How it works',
@@ -93,6 +81,7 @@ export const en = {
         icon: 'circles',
         title: 'Circles',
         body: 'Private encrypted groups with QR-code invites. Only invited members hold the key — relays can’t peek.',
+        soon: true,
       },
       {
         icon: 'megaphone',
@@ -131,7 +120,7 @@ export const en = {
     iosBody: 'Public beta via TestFlight. Install the TestFlight app, then join with one tap.',
     iosCta: 'Join on TestFlight',
     androidTitle: 'Android',
-    androidBody: 'Beta APK, downloadable straight from GitHub. Sideload and you’re in the mesh.',
+    androidBody: 'The Android beta is on its way — same mesh, same open protocol.',
     androidCta: 'Download APK',
   },
 
@@ -169,11 +158,11 @@ export const en = {
       },
       {
         q: 'Is there an Android version?',
-        a: 'Yes, as a beta APK you can download from GitHub. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol.',
+        a: 'Not yet — the Android beta is in the works and coming soon. iOS is in public beta on TestFlight now. The two platforms will speak the same open wire protocol, so they’ll join the same mesh.',
       },
       {
         q: 'What does Premium add?',
-        a: 'Premium is for people who run Circles: creating encrypted groups and admin features like invites and member management. Messaging, joining Circles, broadcasts, photos — all of that is free, forever.',
+        a: 'Premium is coming soon, together with Circles. It will be for people who run Circles: creating encrypted groups and admin features like invites and member management. Messaging, joining Circles, broadcasts, photos — all of that stays free, forever.',
       },
       {
         q: 'Is my chat history backed up somewhere?',

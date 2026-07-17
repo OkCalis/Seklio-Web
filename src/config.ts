@@ -7,6 +7,9 @@ export const SITE = {
   name: 'Seklio',
 
   testflightUrl: 'https://testflight.apple.com/join/qMUpceYp',
+
+  // Currently unused: the Android buttons are disabled ("coming soon").
+  // Re-link this when the Android beta ships.
   androidApkUrl: 'https://github.com/OkCalis/Dream/releases',
 
   contactEmail: 'support@sekl.io',

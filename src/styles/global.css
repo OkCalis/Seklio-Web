@@ -283,116 +283,53 @@ h3 {
   margin: 0;
 }
 
-/* ---------- Phone mockup ---------- */
-.phone-wrap {
+/* ---------- Hero visual (logo) ---------- */
+.hero-visual {
   display: flex;
   justify-content: center;
 }
 
-.phone {
-  width: 300px;
-  border-radius: 44px;
-  background: #fff;
-  border: 1px solid var(--card-border);
+.hero-logo {
+  width: min(340px, 100%);
+  height: auto;
+  border-radius: 22.5%;
   box-shadow: var(--shadow-lg);
-  padding: 14px;
 }
 
-.phone-screen {
-  border-radius: 32px;
-  background: var(--bg-warm);
-  overflow: hidden;
+/* ---------- Coming soon ---------- */
+.cta-col {
   display: flex;
   flex-direction: column;
-  height: 540px;
-}
-
-.chat-header {
-  display: flex;
   align-items: center;
-  gap: 10px;
-  padding: 14px 16px 10px;
-  background: rgba(255, 255, 255, 0.9);
-  border-bottom: 1px solid var(--card-border);
+  gap: 6px;
 }
 
-.chat-avatar {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
-  background: linear-gradient(135deg, var(--orange-bright), var(--orange));
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.chat-peer {
-  line-height: 1.25;
-}
-
-.chat-peer .name {
-  font-weight: 700;
-  font-size: 0.95rem;
-}
-
-.chat-peer .status {
-  font-size: 0.72rem;
-  color: var(--ink-faint);
-  font-family: var(--mono);
-}
-
-.chat-banner {
-  font-size: 0.72rem;
+.soon-note {
+  font-size: 0.8rem;
   font-weight: 600;
-  text-align: center;
-  color: var(--orange);
-  background: var(--orange-soft);
-  padding: 6px 10px;
-}
-
-.chat-body {
-  flex: 1;
-  padding: 14px 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  overflow: hidden;
-}
-
-.bubble {
-  max-width: 82%;
-  padding: 9px 13px;
-  border-radius: 18px;
-  font-size: 0.86rem;
-  line-height: 1.4;
-  box-shadow: var(--shadow-sm);
-}
-
-.bubble.in {
-  align-self: flex-start;
-  background: #fff;
-  border: 1px solid var(--card-border);
-  border-bottom-left-radius: 6px;
-}
-
-.bubble.out {
-  align-self: flex-end;
-  background: linear-gradient(135deg, var(--orange-bright), var(--orange));
-  color: #fff;
-  border-bottom-right-radius: 6px;
-}
-
-.chat-input {
-  margin: 10px 12px 14px;
-  padding: 10px 16px;
-  border-radius: 999px;
-  background: #fff;
-  border: 1px solid var(--card-border);
   color: var(--ink-faint);
-  font-size: 0.86rem;
+}
+
+.soon-badge {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+  padding: 2px 9px;
+  border-radius: 999px;
+  background: var(--orange-soft);
+  border: 1px solid var(--orange-border);
+  color: var(--orange);
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.btn-disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+  pointer-events: none;
 }
 
 /* ---------- Steps ---------- */
@@ -767,16 +704,13 @@ h3 {
     padding-bottom: 64px;
   }
 
-  .phone-wrap {
+  .hero-visual {
     order: -1;
   }
 
-  .phone {
-    width: 270px;
-  }
-
-  .phone-screen {
-    height: 480px;
+  .hero-logo {
+    width: 50vw;
+    max-width: 280px;
   }
 
   .steps {

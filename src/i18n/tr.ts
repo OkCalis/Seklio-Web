@@ -28,22 +28,10 @@ export const tr: Dict = {
       'Seklio, yakındaki telefonları Bluetooth ve Wi-Fi üzerinden doğrudan birbirine bağlar; mesajlarınız cihazdan cihaza örülen bir ağ üzerinden taşınır. Sunucu yok, hesap yok, telefon numarası yok — ve her şey uçtan uca şifreli.',
     ctaIos: 'iOS betasına katıl',
     ctaAndroid: 'Android APK indir',
-    note: 'Ücretsiz · iOS açık betası TestFlight’ta · Android beta APK GitHub’da',
+    note: 'Ücretsiz · iOS açık betası TestFlight’ta · Android çok yakında',
   },
 
-  mockup: {
-    contactName: '@deniz',
-    contactStatus: 'yakında · mesh üzerinden',
-    banner: 'İnternet yok — mesh üzerinden bağlı',
-    messages: [
-      { in: true, text: 'Burada çekim tamamen gitti 😅' },
-      { in: false, text: 'Fark etmez, bu telefondan telefona gidiyor' },
-      { in: true, text: 'Dur, hiç çekmiyor ama mesaj gidiyor mu?' },
-      { in: false, text: 'Aynen — sunucu yok ki. 7’de kapıda buluşalım mı?' },
-      { in: true, text: 'Tamamdır 👍' },
-    ],
-    inputPlaceholder: 'Mesaj',
-  },
+  comingSoon: 'Çok yakında',
 
   how: {
     title: 'Nasıl çalışır',
@@ -55,9 +43,9 @@ export const tr: Dict = {
           'Seklio, çevrenizdeki telefonları Bluetooth LE ve yerel Wi-Fi üzerinden keşfeder. SIM gerekmez, çekim gerekmez, kurulum gerekmez — yakındaysanız bağlısınız.',
       },
       {
-        title: 'Mesajlar cihazdan cihaza sıçrar',
+        title: 'Mesajlar cihazdan cihaza seker',
         body:
-          'Seklio çalıştıran her telefon, mühürlü zarfları bir sonrakine iletir. Doğrudan menzil dışındaki arkadaşlarınıza aradaki telefonlar üzerinden ulaşırsınız — mesh dediğimiz şey bu.',
+          'Seklio çalıştıran her telefon, mühürlü zarfları bir sonrakine iletir. Mesajlarınız telefondan telefona seke seke, doğrudan menzil dışındaki arkadaşlarınıza bile ulaşır — mesh dediğimiz şey bu.',
       },
       {
         title: 'Yalnızca alıcı okuyabilir',
@@ -93,8 +81,9 @@ export const tr: Dict = {
       },
       {
         icon: 'circles',
-        title: 'Circle’lar',
+        title: 'Çevreler',
         body: 'QR kodla davet edilen özel şifreli gruplar. Anahtar yalnızca davetli üyelerde — aradaki cihazlar içeriyi göremez.',
+        soon: true,
       },
       {
         icon: 'megaphone',
@@ -133,7 +122,7 @@ export const tr: Dict = {
     iosBody: 'TestFlight üzerinden açık beta. TestFlight uygulamasını kurun, tek dokunuşla katılın.',
     iosCta: 'TestFlight’ta katıl',
     androidTitle: 'Android',
-    androidBody: 'Beta APK, doğrudan GitHub’dan indirilebilir. Yükleyin ve mesh’e katılın.',
+    androidBody: 'Android betası yolda — aynı mesh, aynı açık protokol.',
     androidCta: 'APK indir',
   },
 
@@ -147,7 +136,7 @@ export const tr: Dict = {
       },
       {
         q: 'Menzili ne kadar?',
-        a: 'Doğrudan bağlantı, Bluetooth’un ya da yerel Wi-Fi ağınızın eriştiği yere kadar uzanır. Ama mesajlar orada durmaz: her telefon onları bir sonrakine iletir, yani gerçek menziliniz bağlı mesh’in tamamıdır — bir mesaj alıcısını bulmak için 7 telefona kadar (duyurularda 15) sıçrayabilir.',
+        a: 'Doğrudan bağlantı, Bluetooth’un ya da yerel Wi-Fi ağınızın eriştiği yere kadar uzanır. Ama mesajlar orada durmaz: her telefon onları bir sonrakine iletir, yani gerçek menziliniz bağlı mesh’in tamamıdır — bir mesaj alıcısını bulmak için 7 telefona kadar (duyurularda 15) sekebilir.',
       },
       {
         q: 'Gerçekten gizli mi?',
@@ -171,11 +160,11 @@ export const tr: Dict = {
       },
       {
         q: 'Android sürümü var mı?',
-        a: 'Evet — GitHub’dan indirebileceğiniz bir beta APK olarak. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur.',
+        a: 'Henüz değil — Android betası üzerinde çalışılıyor ve çok yakında hazır olacak. iOS şu anda TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşacak, yani aynı mesh’e katılacaklar.',
       },
       {
         q: 'Premium ne katıyor?',
-        a: 'Premium, Circle yönetenler içindir: şifreli grup oluşturma ile davet ve üye yönetimi gibi yöneticilik özellikleri. Mesajlaşma, Circle’lara katılma, duyurular, fotoğraflar — bunların hepsi sonsuza kadar ücretsiz.',
+        a: 'Premium, Çevrelerle birlikte çok yakında geliyor. Çevre yönetenler için olacak: şifreli grup oluşturma ile davet ve üye yönetimi gibi yöneticilik özellikleri. Mesajlaşma, Çevrelere katılma, duyurular, fotoğraflar — bunların hepsi sonsuza kadar ücretsiz kalacak.',
       },
       {
         q: 'Sohbet geçmişim bir yere yedekleniyor mu?',
@@ -284,7 +273,7 @@ export const tr: Dict = {
 
   notFound: {
     title: 'Sayfa bulunamadı',
-    body: 'Bu sayfa yok — belki de bir sıçrama fazla yapmıştır.',
+    body: 'Bu sayfa yok — belki de bir kez fazla sekmiştir.',
     cta: 'Ana sayfaya dön',
   },
 };
