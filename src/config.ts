@@ -6,11 +6,8 @@ export const SITE = {
   url: 'https://sekl.io',
   name: 'Seklio',
 
-  // TODO: replace with the real TestFlight public-beta invite link.
-  testflightUrl: 'https://testflight.apple.com/join/REPLACE_ME',
-
-  // TODO: replace with the real GitHub repo / releases page for the Android APK.
-  androidApkUrl: 'https://github.com/OkCalis/REPLACE_ME/releases/latest',
+  testflightUrl: 'https://testflight.apple.com/join/qMUpceYp',
+  androidApkUrl: 'https://github.com/OkCalis/Dream/releases',
 
   contactEmail: 'support@sekl.io',
 } as const;

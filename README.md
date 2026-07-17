@@ -27,9 +27,10 @@ Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site
 3. At the DNS provider for `sekl.io`: add the four GitHub Pages `A` records for the apex (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and, optionally, a `www` CNAME to `okcalis.github.io`.
 4. Once DNS resolves, enable **Enforce HTTPS** in the Pages settings.
 
-## Before launch
+## External links
 
-Replace the placeholder links in `src/config.ts`:
+Beta download links and the contact email live in `src/config.ts`:
 
-- `testflightUrl` — the real TestFlight public-beta invite URL.
-- `androidApkUrl` — the real GitHub releases URL for the Android APK.
+- `testflightUrl` — TestFlight public-beta invite.
+- `androidApkUrl` — GitHub releases page for the Android APK.
+- `contactEmail` — shown on the privacy and support pages.
