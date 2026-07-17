@@ -1,0 +1,24 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { t } from '../i18n';
+
+// GitHub Pages serves a single 404 page for the whole site, so it is
+// bilingual: English first, Turkish below.
+const en = t('en');
+const tr = t('tr');
+---
+
+<BaseLayout locale="en" slug="" title="404 — Seklio" description={en.notFound.body}>
+  <div class="notfound">
+    <h1>404</h1>
+    <p>
+      {en.notFound.body}
+      <br />
+      <span lang="tr">{tr.notFound.body}</span>
+    </p>
+    <p>
+      <a class="btn btn-primary" href="/en/">{en.notFound.cta}</a>
+      <a class="btn btn-secondary" href="/tr/" lang="tr">{tr.notFound.cta}</a>
+    </p>
+  </div>
+</BaseLayout>

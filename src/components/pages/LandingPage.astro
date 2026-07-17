@@ -1,0 +1,133 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PhoneMockup from '../PhoneMockup.astro';
+import Icon from '../Icon.astro';
+import { SITE, type Locale } from '../../config';
+import { t } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale);
+---
+
+<BaseLayout
+  locale={locale}
+  slug=""
+  title={d.meta.landingTitle}
+  description={d.meta.landingDescription}
+>
+  <section class="hero">
+    <div class="container">
+      <div>
+        <span class="hero-badge">
+          <Icon name="offline" />
+          {d.hero.badge}
+        </span>
+        <h1>{d.hero.title}</h1>
+        <p class="hero-sub">{d.hero.subtitle}</p>
+        <div class="hero-ctas">
+          <a class="btn btn-primary" href={SITE.testflightUrl} rel="noopener">{d.hero.ctaIos}</a>
+          <a class="btn btn-secondary" href={SITE.androidApkUrl} rel="noopener">
+            {d.hero.ctaAndroid}
+          </a>
+        </div>
+        <p class="hero-note">{d.hero.note}</p>
+      </div>
+      <PhoneMockup locale={locale} />
+    </div>
+  </section>
+
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-head">
+        <h2>{d.how.title}</h2>
+        <p>{d.how.subtitle}</p>
+      </div>
+      <div class="steps">
+        {
+          d.how.steps.map((s, i) => (
+            <div class="step">
+              <div class="step-num">{i + 1}</div>
+              <h3>{s.title}</h3>
+              <p>{s.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="features">
+    <div class="container">
+      <div class="section-head">
+        <h2>{d.features.title}</h2>
+        <p>{d.features.subtitle}</p>
+      </div>
+      <div class="feature-grid">
+        {
+          d.features.items.map((f) => (
+            <div class="feature">
+              <div class="feature-icon">
+                <Icon name={f.icon} />
+              </div>
+              <h3>{f.title}</h3>
+              <p>{f.body}</p>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="privacy-card">
+        <div>
+          <h2>{d.privacy.title}</h2>
+          <p>{d.privacy.body}</p>
+          <a href={`/${locale}/privacy/`}>{d.privacy.link} →</a>
+        </div>
+        <ul class="privacy-points">
+          {
+            d.privacy.points.map((p) => (
+              <li>
+                <Icon name="check" />
+                <span>{p}</span>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="download">
+    <div class="container">
+      <div class="section-head">
+        <h2>{d.download.title}</h2>
+        <p>{d.download.subtitle}</p>
+      </div>
+      <div class="download-grid">
+        <div class="download-card">
+          <div class="platform-icon"><Icon name="apple" /></div>
+          <h3>{d.download.iosTitle}</h3>
+          <p>{d.download.iosBody}</p>
+          <a class="btn btn-primary" href={SITE.testflightUrl} rel="noopener">
+            {d.download.iosCta}
+          </a>
+        </div>
+        <div class="download-card">
+          <div class="platform-icon"><Icon name="android" /></div>
+          <h3>{d.download.androidTitle}</h3>
+          <p>{d.download.androidBody}</p>
+          <a class="btn btn-secondary" href={SITE.androidApkUrl} rel="noopener">
+            {d.download.androidCta}
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</BaseLayout>

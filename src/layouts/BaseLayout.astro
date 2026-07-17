@@ -1,0 +1,57 @@
+---
+import '../styles/global.css';
+import { SITE, LOCALES, type Locale } from '../config';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+interface Props {
+  locale: Locale;
+  /** Path of this page below the locale prefix, e.g. '' | 'faq' | 'privacy' | 'support'. */
+  slug: string;
+  title: string;
+  description: string;
+}
+
+const { locale, slug, title, description } = Astro.props;
+const path = (l: Locale) => `/${l}/${slug ? slug + '/' : ''}`;
+const canonical = SITE.url + path(locale);
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="canonical" href={canonical} />
+    {LOCALES.map((l) => <link rel="alternate" hreflang={l} href={SITE.url + path(l)} />)}
+    <link rel="alternate" hreflang="x-default" href={SITE.url + '/'} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonical} />
+    <meta name="theme-color" content="#f25c05" />
+  </head>
+  <body>
+    <Header locale={locale} slug={slug} />
+    <main>
+      <slot />
+    </main>
+    <Footer locale={locale} slug={slug} />
+    <script>
+      // Remember an explicit language choice so the root auto-detect respects it.
+      document.querySelectorAll<HTMLAnchorElement>('[data-set-lang]').forEach((a) => {
+        a.addEventListener('click', () => {
+          try {
+            localStorage.setItem('seklio-lang', a.dataset.setLang!);
+          } catch {
+            /* private mode — auto-detect will run again next visit */
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

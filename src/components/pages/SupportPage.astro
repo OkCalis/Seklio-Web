@@ -1,0 +1,43 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE, type Locale } from '../../config';
+import { t } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale);
+
+const render = (p: string) =>
+  p
+    .replace('{email}', `<a href="mailto:${SITE.contactEmail}">${SITE.contactEmail}</a>`)
+    .replace('{faq}', `<a href="/${locale}/faq/">${d.nav.faq}</a>`);
+---
+
+<BaseLayout
+  locale={locale}
+  slug="support"
+  title={d.meta.supportTitle}
+  description={d.meta.supportDescription}
+>
+  <div class="page-hero">
+    <div class="container">
+      <h1>{d.supportPage.title}</h1>
+      <p>{d.supportPage.intro}</p>
+    </div>
+  </div>
+  <div class="prose">
+    {
+      d.supportPage.sections.map((s) => (
+        <>
+          <h2>{s.h}</h2>
+          {s.ps.map((p) => (
+            <p set:html={render(p)} />
+          ))}
+        </>
+      ))
+    }
+  </div>
+</BaseLayout>

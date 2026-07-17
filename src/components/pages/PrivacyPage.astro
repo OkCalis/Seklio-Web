@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE, type Locale } from '../../config';
+import { t } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale);
+
+const render = (p: string) =>
+  p.replace('{email}', `<a href="mailto:${SITE.contactEmail}">${SITE.contactEmail}</a>`);
+---
+
+<BaseLayout
+  locale={locale}
+  slug="privacy"
+  title={d.meta.privacyTitle}
+  description={d.meta.privacyDescription}
+>
+  <div class="page-hero">
+    <div class="container">
+      <h1>{d.privacyPage.title}</h1>
+      <p>{d.privacyPage.updated}</p>
+    </div>
+  </div>
+  <div class="prose">
+    {
+      d.privacyPage.sections.map((s) => (
+        <>
+          <h2>{s.h}</h2>
+          {s.ps.map((p) => (
+            <p set:html={render(p)} />
+          ))}
+        </>
+      ))
+    }
+  </div>
+</BaseLayout>

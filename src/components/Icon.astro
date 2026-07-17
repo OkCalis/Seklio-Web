@@ -1,0 +1,33 @@
+---
+interface Props {
+  name: string;
+}
+
+const { name } = Astro.props;
+
+// Simple stroke icons, 24×24 viewBox, currentColor.
+const icons: Record<string, string> = {
+  lock: `<rect x="4" y="10" width="16" height="10" rx="3"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/><circle cx="12" cy="15" r="1.5" fill="currentColor" stroke="none"/>`,
+  id: `<circle cx="12" cy="9" r="3.5"/><path d="M5 20c1.2-3.2 3.8-5 7-5s5.8 1.8 7 5"/>`,
+  offline: `<path d="M2 8.5C4.8 5.8 8.2 4.5 12 4.5c1.9 0 3.7.3 5.4 1"/><path d="M5 12.5c1.5-1.3 3.2-2.1 5-2.4"/><path d="M8.5 16.2a6 6 0 0 1 3.5-1.2c1.3 0 2.5.4 3.5 1.2"/><circle cx="12" cy="19.5" r="1.3" fill="currentColor" stroke="none"/><line x1="19" y1="5" x2="5" y2="19"/>`,
+  clock: `<circle cx="12" cy="12" r="8.5"/><path d="M12 7v5l3.5 2"/>`,
+  circles: `<circle cx="9" cy="9" r="4.5"/><circle cx="15.5" cy="14.5" r="4.5"/>`,
+  megaphone: `<path d="M4 10v4a1 1 0 0 0 1 1h2l3 4v-14l-3 4H5a1 1 0 0 0-1 1z"/><path d="M14 9a4 4 0 0 1 0 6"/><path d="M16.5 6.5a8 8 0 0 1 0 11"/>`,
+  photo: `<rect x="3.5" y="5" width="17" height="14" rx="3"/><circle cx="9" cy="10" r="1.8"/><path d="M4 17l4.5-4.5a1.5 1.5 0 0 1 2.1 0L17 19"/><path d="M14.5 15.5l2-2a1.5 1.5 0 0 1 2.1 0l1.9 1.9"/>`,
+  qr: `<rect x="4" y="4" width="6" height="6" rx="1"/><rect x="14" y="4" width="6" height="6" rx="1"/><rect x="4" y="14" width="6" height="6" rx="1"/><path d="M14 14h3v3h-3zM20 14v2M17 20h3M14 19v1"/>`,
+  check: `<circle cx="12" cy="12" r="9"/><path d="M8 12.5l2.7 2.7L16 9.5"/>`,
+  apple: `<path d="M15.5 6.5c.9-1 1.5-2.4 1.3-3.9-1.3.1-2.8.9-3.7 1.9-.8.9-1.5 2.4-1.3 3.8 1.4.1 2.8-.7 3.7-1.8z" fill="currentColor" stroke="none"/><path d="M18.7 13c0-2.4 2-3.6 2.1-3.7-1.1-1.7-2.9-1.9-3.5-1.9-1.5-.2-2.9.9-3.7.9-.8 0-1.9-.9-3.2-.8-1.6 0-3.1 1-4 2.4-1.7 2.9-.4 7.3 1.2 9.7.8 1.2 1.8 2.5 3.1 2.4 1.2-.1 1.7-.8 3.2-.8s1.9.8 3.2.8c1.3 0 2.2-1.2 3-2.4.9-1.4 1.3-2.7 1.3-2.8-.1 0-2.6-1-2.7-3.8z" fill="currentColor" stroke="none"/>`,
+  android: `<path d="M7 9h10a1 1 0 0 1 1 1v6a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-6a1 1 0 0 1 1-1z"/><path d="M7.5 8.5C7.8 6 9.7 4.2 12 4.2S16.2 6 16.5 8.5"/><line x1="9" y1="3" x2="10" y2="4.6"/><line x1="15" y1="3" x2="14" y2="4.6"/><line x1="4.5" y1="10.5" x2="4.5" y2="14.5"/><line x1="19.5" y1="10.5" x2="19.5" y2="14.5"/><line x1="10" y1="18" x2="10" y2="20.5"/><line x1="14" y1="18" x2="14" y2="20.5"/>`,
+};
+---
+
+<svg
+  viewBox="0 0 24 24"
+  fill="none"
+  stroke="currentColor"
+  stroke-width="1.8"
+  stroke-linecap="round"
+  stroke-linejoin="round"
+  aria-hidden="true"
+  set:html={icons[name] ?? icons.check}
+/>

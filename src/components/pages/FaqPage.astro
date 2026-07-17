@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import type { Locale } from '../../config';
+import { t } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale);
+---
+
+<BaseLayout locale={locale} slug="faq" title={d.meta.faqTitle} description={d.meta.faqDescription}>
+  <div class="page-hero">
+    <div class="container">
+      <h1>{d.faq.title}</h1>
+      <p>{d.faq.subtitle}</p>
+    </div>
+  </div>
+  <section class="section" style="padding-top: 48px;">
+    <div class="container">
+      <div class="faq-list">
+        {
+          d.faq.items.map((item) => (
+            <details class="faq-item">
+              <summary>{item.q}</summary>
+              <div class="answer">
+                <p>{item.a}</p>
+              </div>
+            </details>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</BaseLayout>
