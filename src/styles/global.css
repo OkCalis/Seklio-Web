@@ -108,7 +108,6 @@ h3 {
 .brand img {
   width: 30px;
   height: 30px;
-  border-radius: 8px;
 }
 
 .main-nav {
@@ -292,8 +291,7 @@ h3 {
 .hero-logo {
   width: min(340px, 100%);
   height: auto;
-  border-radius: 22.5%;
-  box-shadow: var(--shadow-lg);
+  filter: drop-shadow(0 30px 60px rgba(242, 92, 5, 0.28));
 }
 
 /* ---------- Coming soon ---------- */
