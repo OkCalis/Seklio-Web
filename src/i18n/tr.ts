@@ -156,7 +156,7 @@ export const tr: Dict = {
       },
       {
         q: 'Telefon numarası ya da e-posta gerekiyor mu?',
-        a: 'Hayır. Kimliğiniz cihazınızda üretilen bir kriptografik anahtar çiftidir. Bir kullanıcı adı seçersiniz (ör. @irem) — kimsenin gördüğü tek şey budur ve istediğiniz zaman değiştirebilirsiniz.',
+        a: 'Hayır. Kimliğiniz cihazınızda üretilen bir kriptografik anahtar çiftidir. Bir kullanıcı adı seçersiniz (ör. @irem) — başkalarının gördüğü tek şey budur ve onu istediğiniz zaman değiştirebilirsiniz.',
       },
       {
         q: 'Gerçek adımı kullanmak zorunda mıyım?',
