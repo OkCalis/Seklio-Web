@@ -156,7 +156,11 @@ export const tr: Dict = {
       },
       {
         q: 'Telefon numarası ya da e-posta gerekiyor mu?',
-        a: 'Hayır. Kimliğiniz cihazınızda üretilen bir kriptografik anahtar çiftidir. Bir kullanıcı adı seçersiniz (ör. @deniz) — kimsenin gördüğü tek şey budur ve istediğiniz zaman değiştirebilirsiniz.',
+        a: 'Hayır. Kimliğiniz cihazınızda üretilen bir kriptografik anahtar çiftidir. Bir kullanıcı adı seçersiniz (ör. @irem) — kimsenin gördüğü tek şey budur ve istediğiniz zaman değiştirebilirsiniz.',
+      },
+      {
+        q: 'Gerçek adımı kullanmak zorunda mıyım?',
+        a: 'Hayır — gerçek ad tamamen isteğe bağlıdır. Herkes yalnızca kullanıcı adınızı görür. Gerçek adınızı eklemeyi seçerseniz, yalnızca yüz yüze doğruladığınız arkadaşlarınızla uçtan uca şifreli olarak paylaşılır; asla ağa yayınlanmaz ve istediğiniz zaman geri çekebilirsiniz.',
       },
       {
         q: 'Android sürümü var mı?',
@@ -168,7 +172,7 @@ export const tr: Dict = {
       },
       {
         q: 'Sohbet geçmişim bir yere yedekleniyor mu?',
-        a: 'Hayır. Geçmişiniz yalnızca cihazınızda bulunur. Bu bir özellik: hiç kimse — biz dahil — onu teslim edemez, sızdıramaz ya da işleyemez. Uygulamayı silmek verinizi siler.',
+        a: 'Seklio tarafından değil — Seklio’nun sunucusu yoktur ve uygulama sohbetlerinizi kendiliğinden hiçbir yere yüklemez. iOS’ta geçmişiniz, telefonunuzun normal cihaz yedeğinin bir parçasıdır: telefonunuzu iCloud’a yedekliyorsanız sohbetleriniz de iCloud hesabınızın koruması altında yedeğe dahil olur ve diğer verilerinizle birlikte geri yüklenir. Her durumda Seklio tarafında geçmişinizi okuyabilecek, teslim edebilecek ya da işleyebilecek kimse yoktur.',
       },
     ],
   },

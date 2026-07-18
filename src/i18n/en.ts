@@ -154,7 +154,11 @@ export const en = {
       },
       {
         q: 'Do I need a phone number or an email?',
-        a: 'No. Your identity is a cryptographic keypair generated on your device. You pick a handle (like @deniz) — that’s all anyone sees, and you can change it anytime.',
+        a: 'No. Your identity is a cryptographic keypair generated on your device. You pick a handle (like @irem) — that’s all anyone sees, and you can change it anytime.',
+      },
+      {
+        q: 'Do I have to use my real name?',
+        a: 'No — real names are completely optional. Everyone sees only your handle. If you choose to add your real name, it’s shared end-to-end encrypted only with friends you’ve verified in person; it’s never broadcast to the network, and you can withdraw it at any time.',
       },
       {
         q: 'Is there an Android version?',
@@ -166,7 +170,7 @@ export const en = {
       },
       {
         q: 'Is my chat history backed up somewhere?',
-        a: 'No. Your history exists only on your device. That’s a feature: nobody — including us — can hand it over, leak it, or mine it. Deleting the app deletes your data.',
+        a: 'Not by Seklio — there are no Seklio servers, and the app never uploads your chats anywhere itself. On iOS, your history is part of your phone’s normal device backup: if you back up to iCloud, your chats are included under your iCloud account’s protection and restored along with the rest of your data. Either way, nobody at Seklio can read, hand over, or mine your history.',
       },
     ],
   },
