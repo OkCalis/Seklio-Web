@@ -40,7 +40,14 @@ const structuredData = JSON.stringify({
         <p class="hero-sub">{d.hero.subtitle}</p>
         <div class="hero-ctas">
           <a class="btn btn-primary" href={SITE.testflightUrl} rel="noopener">{d.hero.ctaIos}</a>
-          <a class="btn btn-secondary" href={SITE.androidApkUrl} download>{d.hero.ctaAndroid}</a>
+          <a
+            class="btn btn-secondary"
+            href={SITE.androidApkUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            {d.hero.ctaAndroid}
+          </a>
         </div>
         <p class="hero-note">{d.hero.note}</p>
       </div>
@@ -138,7 +145,12 @@ const structuredData = JSON.stringify({
           <div class="platform-icon"><Icon name="android" /></div>
           <h3>{d.download.androidTitle}</h3>
           <p>{d.download.androidBody}</p>
-          <a class="btn btn-secondary" href={SITE.androidApkUrl} download>
+          <a
+            class="btn btn-secondary"
+            href={SITE.androidApkUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             {d.download.androidCta}
           </a>
         </div>

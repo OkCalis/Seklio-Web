@@ -8,10 +8,7 @@ export const SITE = {
 
   testflightUrl: 'https://testflight.apple.com/join/qMUpceYp',
 
-  // The beta APK is hosted on the site itself (public/seklio.apk) for now.
-  // Long-term plan: move it to GitHub Releases and point this at
-  // https://github.com/OkCalis/<repo>/releases/latest/download/seklio.apk
-  androidApkUrl: '/seklio.apk',
+  androidApkUrl: 'https://github.com/OkCalis/Seklio-Android-Release/releases',
 
   contactEmail: 'support@sekl.io',
 } as const;

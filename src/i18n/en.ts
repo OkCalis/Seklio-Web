@@ -26,7 +26,7 @@ export const en = {
       'Seklio connects nearby phones directly over Bluetooth and Wi-Fi, forming a mesh that carries your messages from device to device. No servers, no accounts, no phone numbers — and everything is end-to-end encrypted.',
     ctaIos: 'Join the iOS beta',
     ctaAndroid: 'Get the Android APK',
-    note: 'Free · iOS public beta on TestFlight · Android beta APK',
+    note: 'Free · iOS public beta on TestFlight · Android beta APK on GitHub',
   },
 
   comingSoon: 'Coming soon',
@@ -120,7 +120,7 @@ export const en = {
     iosBody: 'Public beta via TestFlight. Install the TestFlight app, then join with one tap.',
     iosCta: 'Join on TestFlight',
     androidTitle: 'Android',
-    androidBody: 'Beta APK, downloadable right here. Sideload and you’re in the mesh.',
+    androidBody: 'Beta APK on GitHub Releases. Sideload and you’re in the mesh.',
     androidCta: 'Download APK',
   },
 
@@ -162,7 +162,7 @@ export const en = {
       },
       {
         q: 'Is there an Android version?',
-        a: 'Yes — a beta APK you can download right here from sekl.io. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
+        a: 'Yes — a beta APK you can download from our GitHub Releases page. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
       },
       {
         q: 'What does Premium add?',
