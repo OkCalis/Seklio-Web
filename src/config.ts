@@ -8,6 +8,9 @@ export const SITE = {
 
   testflightUrl: 'https://testflight.apple.com/join/qMUpceYp',
 
+  // Fallback target for the Android buttons; the landing page resolves the
+  // newest .apk asset from this repo via the GitHub API at click time.
+  androidReleaseRepo: 'OkCalis/Seklio-Android-Release',
   androidApkUrl: 'https://github.com/OkCalis/Seklio-Android-Release/releases',
 
   contactEmail: 'support@sekl.io',
