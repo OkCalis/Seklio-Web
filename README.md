@@ -20,12 +20,19 @@ npm run preview  # serve the built site
 
 ## Deployment
 
-Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the site and deploys it to GitHub Pages. One-time repo setup:
+Deployment is **tag-driven**: `.github/workflows/deploy.yml` builds and publishes to GitHub Pages whenever a tag is pushed. Merging to `main` does *not* publish — it only updates the source.
+
+To release the current `main`: create a tag on GitHub (**Releases → Draft a new release → choose a tag → Publish**, or `git tag release-2026-07-20 && git push origin release-2026-07-20`). The tag name is arbitrary; the most recently pushed tag is what goes live.
+
+To roll back: **Actions → Deploy to GitHub Pages → Run workflow** and pick an older tag from the dropdown.
+
+One-time repo setup:
 
 1. **Settings → Pages → Source**: select **GitHub Actions**.
-2. **Settings → Pages → Custom domain**: enter `sekl.io` (the build also ships a `CNAME` file).
-3. At the DNS provider for `sekl.io`: add the four GitHub Pages `A` records for the apex (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and, optionally, a `www` CNAME to `okcalis.github.io`.
-4. Once DNS resolves, enable **Enforce HTTPS** in the Pages settings.
+2. **Settings → Environments → github-pages → Deployment branches and tags**: allow tags (add a `**` rule, or remove the restriction). The default policy permits only the default branch, which makes tag deploys fail with *"not allowed to deploy to github-pages due to environment protection rules"*.
+3. **Settings → Pages → Custom domain**: enter `sekl.io` (the build also ships a `CNAME` file).
+4. At the DNS provider for `sekl.io`: add the four GitHub Pages `A` records for the apex (`185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`) and, optionally, a `www` CNAME to `okcalis.github.io`.
+5. Once DNS resolves, enable **Enforce HTTPS** in the Pages settings.
 
 ## External links
 
