@@ -78,21 +78,23 @@ const structuredData = JSON.stringify({
       return apkPromise;
     };
 
-    document.querySelectorAll('[data-apk-button]').forEach((el) => {
-      el.addEventListener('click', (event) => {
-        event.preventDefault();
-        el.setAttribute('aria-busy', 'true');
-        resolveApkUrl()
-          .then((url) => {
-            window.location.href = url;
-          })
-          .catch(() => {
-            window.location.href = fallback;
-          })
-          .finally(() => {
-            el.removeAttribute('aria-busy');
-          });
-      });
+    // Delegate from document: this script runs mid-parse, before the second
+    // button exists in the DOM, so per-element listeners would miss it.
+    document.addEventListener('click', (event) => {
+      const el = event.target instanceof Element && event.target.closest('[data-apk-button]');
+      if (!el) return;
+      event.preventDefault();
+      el.setAttribute('aria-busy', 'true');
+      resolveApkUrl()
+        .then((url) => {
+          window.location.href = url;
+        })
+        .catch(() => {
+          window.location.href = fallback;
+        })
+        .finally(() => {
+          el.removeAttribute('aria-busy');
+        });
     });
   </script>
 
