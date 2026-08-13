@@ -1,12 +1,8 @@
 name: Deploy to GitHub Pages
 
 on:
-  # Publishing is tag-driven: pushing ANY tag (or publishing a release, which
-  # creates one) deploys that tag's commit. Name doesn't matter — the most
-  # recently pushed tag is what goes live. Merging to main no longer deploys.
   push:
-    tags: ['**']
-  # Manual re-deploy / rollback: Actions -> Run workflow -> pick any tag.
+    branches: [main]
   workflow_dispatch:
 
 permissions:
