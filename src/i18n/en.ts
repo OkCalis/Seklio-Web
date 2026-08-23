@@ -25,8 +25,9 @@ export const en = {
     subtitle:
       'Seklio connects nearby phones directly over Bluetooth and Wi-Fi, forming a mesh that carries your messages from device to device. No servers, no accounts, no phone numbers — and everything is end-to-end encrypted.',
     ctaIos: 'Join the iOS beta',
+    ctaPlay: 'Get it on Google Play',
     ctaAndroid: 'Get the Android APK',
-    note: 'Free · iOS public beta on TestFlight · Android beta APK on GitHub',
+    note: 'Free · iOS public beta on TestFlight · Android beta on Google Play & GitHub',
   },
 
   comingSoon: 'Coming soon',
@@ -115,12 +116,13 @@ export const en = {
 
   download: {
     title: 'Try the beta',
-    subtitle: 'Seklio is in public beta on both platforms.',
+    subtitle: 'Seklio is in beta on both platforms.',
     iosTitle: 'iOS',
     iosBody: 'Public beta via TestFlight. Install the TestFlight app, then join with one tap.',
     iosCta: 'Join on TestFlight',
     androidTitle: 'Android',
-    androidBody: 'Beta APK on GitHub Releases. Sideload and you’re in the mesh.',
+    androidBody: 'Closed beta on Google Play — or grab the APK straight from GitHub Releases.',
+    playCta: 'Get it on Google Play',
     androidCta: 'Download APK',
   },
 
@@ -162,7 +164,7 @@ export const en = {
       },
       {
         q: 'Is there an Android version?',
-        a: 'Yes — a beta APK you can download from our GitHub Releases page. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
+        a: 'Yes — Android is in closed beta on Google Play, and the beta APK is also downloadable from our GitHub Releases page. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
       },
       {
         q: 'What does Premium add?',

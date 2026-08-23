@@ -519,8 +519,16 @@ h3 {
   margin: 0 0 16px;
 }
 
-.download-card .btn {
+.download-card > .btn,
+.download-card .btn-stack {
   margin-top: auto;
+}
+
+.download-card .btn-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 /* ---------- FAQ ---------- */

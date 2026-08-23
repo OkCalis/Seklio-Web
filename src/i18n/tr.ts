@@ -27,8 +27,9 @@ export const tr: Dict = {
     subtitle:
       'Seklio, yakındaki telefonları Bluetooth ve Wi-Fi üzerinden doğrudan birbirine bağlar; mesajlarınız cihazdan cihaza uzanan bir örgü ağ üzerinden taşınır. Sunucu yok, hesap yok, telefon numarası yok — ve her şey uçtan uca şifreli.',
     ctaIos: 'iOS betasına katıl',
+    ctaPlay: 'Google Play’den edinin',
     ctaAndroid: 'Android APK indir',
-    note: 'Ücretsiz · iOS açık betası TestFlight’ta · Android beta APK GitHub’da',
+    note: 'Ücretsiz · iOS açık betası TestFlight’ta · Android betası Google Play’de ve GitHub’da',
   },
 
   comingSoon: 'Çok yakında',
@@ -117,12 +118,13 @@ export const tr: Dict = {
 
   download: {
     title: 'Betayı deneyin',
-    subtitle: 'Seklio her iki platformda da açık betada.',
+    subtitle: 'Seklio her iki platformda da betada.',
     iosTitle: 'iOS',
     iosBody: 'TestFlight üzerinden açık beta. TestFlight uygulamasını kurun, tek dokunuşla katılın.',
     iosCta: 'TestFlight’ta katıl',
     androidTitle: 'Android',
-    androidBody: 'Beta APK, GitHub Releases sayfamızdan indirilebilir. Yükleyin ve örgü ağa katılın.',
+    androidBody: 'Google Play’de kapalı beta — ya da APK’yı doğrudan GitHub Releases’tan indirin.',
+    playCta: 'Google Play’den edinin',
     androidCta: 'APK indir',
   },
 
@@ -164,7 +166,7 @@ export const tr: Dict = {
       },
       {
         q: 'Android sürümü var mı?',
-        a: 'Evet — beta APK’yı GitHub Releases sayfamızdan indirebilirsiniz. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
+        a: 'Evet — Android, Google Play’de kapalı betada; beta APK’yı GitHub Releases sayfamızdan da indirebilirsiniz. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
       },
       {
         q: 'Premium ne katıyor?',
