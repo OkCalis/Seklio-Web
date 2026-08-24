@@ -123,7 +123,7 @@ export const tr: Dict = {
     iosBody: 'TestFlight üzerinden açık beta. TestFlight uygulamasını kurun, tek dokunuşla katılın.',
     iosCta: 'TestFlight’ta katıl',
     androidTitle: 'Android',
-    androidBody: 'Google Play’de alfa aşamasında: “Seklio Alpha Channel” Google Group’una katılın; Play sayfası hesabınız için açılır. Ya da APK’yı doğrudan GitHub Releases’tan indirin.',
+    androidBody: 'Android alfası Google Play’de. “Seklio Alpha Channel” Google Grubu’na katıldığınızda uygulama Play’de hesabınıza açılıyor. Dilerseniz APK’yı doğrudan GitHub Releases’tan da indirebilirsiniz.',
     alphaCta: 'Google Groups’ta Alfa Testine Katıl',
     androidCta: 'APK indir',
   },
@@ -166,7 +166,7 @@ export const tr: Dict = {
       },
       {
         q: 'Android sürümü var mı?',
-        a: 'Evet — Android, Google Play’de alfa aşamasında. Önce “Seklio Alpha Channel” Google Group’una katılın; üye olduktan sonra Play sayfası aynı Google hesabı için açılır. Alfa APK’sını grup üyeliği gerekmeden doğrudan GitHub Releases sayfamızdan da indirebilirsiniz. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
+        a: 'Evet — Android şu an Google Play’de alfa aşamasında. Önce “Seklio Alpha Channel” Google Grubu’na katılmanız gerekiyor; üye olduktan sonra uygulama, aynı Google hesabıyla girdiğiniz Play’de görünür hale geliyor. Alfa APK’sını gruba üye olmadan, doğrudan GitHub Releases sayfamızdan da indirebilirsiniz. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
       },
       {
         q: 'Premium ne katıyor?',
