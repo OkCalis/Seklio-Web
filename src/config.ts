@@ -13,7 +13,9 @@ export const SITE = {
   androidReleaseRepo: 'OkCalis/Seklio-Android-Release',
   androidApkUrl: 'https://github.com/OkCalis/Seklio-Android-Release/releases',
 
-  // Google Play closed test.
+  // Android alpha: the Play closed-test listing only unlocks for members of
+  // the "Seklio Alpha Channel" Google Group, so the site links the group.
+  alphaGroupUrl: 'https://groups.google.com/g/seklio',
   playStoreUrl: 'https://play.google.com/store/apps/details?id=io.sekl.seklio.app',
 
   contactEmail: 'support@sekl.io',
