@@ -1,0 +1,63 @@
+---
+// Language chooser for a prefixless URL: redirects to /en/<slug> or
+// /tr/<slug> based on a remembered choice or the browser language.
+// The noscript fallback goes to the English page.
+interface Props {
+  /** Path below the locale prefix, with trailing slash — e.g. '' | 'faq/' | 'support/'. */
+  slug: string;
+}
+
+const { slug } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seklio</title>
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="alternate" hreflang="en" href={`https://sekl.io/en/${slug}`} />
+    <link rel="alternate" hreflang="tr" href={`https://sekl.io/tr/${slug}`} />
+    <link rel="alternate" hreflang="x-default" href={`https://sekl.io/${slug}`} />
+    <script is:inline define:vars={{ slug }}>
+      let lang = null;
+      try {
+        lang = localStorage.getItem('seklio-lang');
+      } catch {
+        /* storage unavailable */
+      }
+      if (lang !== 'en' && lang !== 'tr') {
+        const nav = (navigator.languages?.[0] ?? navigator.language ?? 'en').toLowerCase();
+        lang = nav.startsWith('tr') ? 'tr' : 'en';
+      }
+      location.replace(`/${lang}/${slug}`);
+    </script>
+    <noscript>
+      <meta http-equiv="refresh" content={`0; url=/en/${slug}`} />
+    </noscript>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        margin: 0;
+      }
+      a {
+        color: #f25c05;
+        font-weight: 600;
+        margin: 0 12px;
+        font-size: 1.1rem;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      <a href={`/en/${slug}`}>English</a> · <a href={`/tr/${slug}`}>Türkçe</a>
+    </p>
+  </body>
+</html>
