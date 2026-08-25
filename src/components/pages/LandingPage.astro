@@ -207,10 +207,9 @@ const structuredData = JSON.stringify({
     // This script sits after the download section so both surfaces exist.
     (() => {
       const ua = navigator.userAgent;
-      const isIOS =
-        /iPad|iPhone|iPod/.test(ua) ||
-        // iPadOS 13+ masquerades as a desktop Mac; the touch screen gives it away.
-        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      // Macs count as iOS: Apple-silicon Macs (and iPadOS 13+, which
+      // masquerades as a desktop Mac — "Macintosh" UA) can install the iOS app.
+      const isIOS = /iPad|iPhone|iPod|Macintosh/.test(ua) || /^Mac/.test(navigator.platform);
       const isAndroid = !isIOS && /Android/i.test(ua);
       document.documentElement.dataset.platform = isIOS ? 'ios' : isAndroid ? 'android' : 'other';
       if (!isAndroid) return;
