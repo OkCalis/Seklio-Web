@@ -39,8 +39,12 @@ const structuredData = JSON.stringify({
         <h1>{d.hero.title}</h1>
         <p class="hero-sub">{d.hero.subtitle}</p>
         <div class="hero-ctas">
-          <a class="btn btn-primary" href={SITE.testflightUrl} rel="noopener">{d.hero.ctaIos}</a>
-          <a class="btn btn-secondary" href={SITE.alphaGroupUrl}>{d.hero.ctaAlpha}</a>
+          <a class="btn btn-primary" href={SITE.testflightUrl} rel="noopener" data-cta="ios">
+            {d.hero.ctaIos}
+          </a>
+          <a class="btn btn-secondary" href={SITE.alphaGroupUrl} data-cta="alpha">
+            {d.hero.ctaAlpha}
+          </a>
           <a class="btn btn-secondary" href={SITE.androidApkUrl} data-apk-button>
             {d.hero.ctaAndroid}
           </a>
@@ -173,7 +177,7 @@ const structuredData = JSON.stringify({
         <p>{d.download.subtitle}</p>
       </div>
       <div class="download-grid">
-        <div class="download-card">
+        <div class="download-card" data-card="ios">
           <div class="platform-icon"><Icon name="apple" /></div>
           <h3>{d.download.iosTitle}</h3>
           <p>{d.download.iosBody}</p>
@@ -181,7 +185,7 @@ const structuredData = JSON.stringify({
             {d.download.iosCta}
           </a>
         </div>
-        <div class="download-card">
+        <div class="download-card" data-card="android">
           <div class="platform-icon"><Icon name="android" /></div>
           <h3>{d.download.androidTitle}</h3>
           <p>{d.download.androidBody}</p>
@@ -195,4 +199,36 @@ const structuredData = JSON.stringify({
       </div>
     </div>
   </section>
+
+  <script is:inline>
+    // Platform-aware promotion (progressive enhancement): Android visitors
+    // get the Android options first and styled primary; iOS visitors already
+    // see the iOS-first default; everyone else keeps the neutral layout.
+    // This script sits after the download section so both surfaces exist.
+    (() => {
+      const ua = navigator.userAgent;
+      const isIOS =
+        /iPad|iPhone|iPod/.test(ua) ||
+        // iPadOS 13+ masquerades as a desktop Mac; the touch screen gives it away.
+        (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+      const isAndroid = !isIOS && /Android/i.test(ua);
+      document.documentElement.dataset.platform = isIOS ? 'ios' : isAndroid ? 'android' : 'other';
+      if (!isAndroid) return;
+
+      const ctas = document.querySelector('.hero-ctas');
+      if (ctas) {
+        const ios = ctas.querySelector('[data-cta="ios"]');
+        const alpha = ctas.querySelector('[data-cta="alpha"]');
+        alpha?.classList.replace('btn-secondary', 'btn-primary');
+        if (ios) {
+          ios.classList.replace('btn-primary', 'btn-secondary');
+          ctas.append(ios); // Android buttons lead, iOS moves last
+        }
+      }
+
+      const grid = document.querySelector('.download-grid');
+      const iosCard = grid?.querySelector('[data-card="ios"]');
+      if (grid && iosCard) grid.append(iosCard); // Android card first
+    })();
+  </script>
 </BaseLayout>
