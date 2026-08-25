@@ -126,7 +126,7 @@ export const en = {
     alphaCta: '1 · Join Alpha Test on Google Groups',
     playWaitNote: 'Membership can take a while to reach Google Play — if the listing says the app isn’t available yet, wait a bit and try step 2 again.',
     playCta: '2 · Get it on Google Play',
-    apkAltNote: 'Or skip both steps — the APK is an alternative to Google Play, not a third step. Same app, installed directly.',
+    apkAltNote: 'You can alternatively download the APK if you don’t have access to Google Play Services or if you just prefer sideloading.',
     androidCta: 'Download APK',
   },
 

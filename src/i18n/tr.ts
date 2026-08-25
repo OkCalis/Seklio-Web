@@ -128,7 +128,7 @@ export const tr: Dict = {
     alphaCta: '1 · Google Groups’ta Alfa Testine Katıl',
     playWaitNote: 'Üyeliğinin Google Play’e işlemesi biraz zaman alabilir — sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip 2. adımı yeniden dene.',
     playCta: '2 · Google Play’den edin',
-    apkAltNote: 'İstersen iki adımı da atla — APK, Google Play’in alternatifi; üçüncü bir adım değil. Aynı uygulama, doğrudan kurulur.',
+    apkAltNote: 'Google Play Hizmetleri’ne erişimin yoksa ya da sadece elden kurulumu tercih ediyorsan, alternatif olarak APK’yı indirebilirsin.',
     androidCta: 'APK indir',
   },
 
