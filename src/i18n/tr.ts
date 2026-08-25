@@ -128,7 +128,7 @@ export const tr: Dict = {
     alphaCta: '1 · Google Groups’ta Alfa Testine Katıl',
     playWaitNote: 'Üyeliğinin Google Play’e işlemesi biraz zaman alabilir — sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip 2. adımı yeniden dene.',
     playCta: '2 · Google Play’den edin',
-    apkAltNote: 'İstersen iki adımı da atla — APK, aynı uygulamanın Google Play gerektirmeyen hali. Telefonunda Google Play hizmetleri yoksa da birebir çalışır.',
+    apkAltNote: 'İstersen iki adımı da atla — APK, Google Play’in alternatifi; üçüncü bir adım değil. Aynı uygulama, doğrudan kurulur.',
     androidCta: 'APK indir',
   },
 
@@ -170,7 +170,7 @@ export const tr: Dict = {
       },
       {
         q: 'Android sürümü var mı?',
-        a: 'Evet — Android şu an Google Play’de alfa aşamasında ve erişim iki adımlı: önce “Seklio Alpha Channel” Google Grubu’na katılıyorsun, ardından uygulamayı aynı Google hesabıyla Play sayfasından yüklüyorsun. Üyeliğinin Google Play’e işlemesi biraz zaman alabilir; sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip yeniden dene. Alfa APK’sını gruba üye olmadan, doğrudan GitHub Releases sayfamızdan da indirebilirsin — telefonunda Google Play hizmetleri yoksa da çalışır. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
+        a: 'Evet — Android şu an Google Play’de alfa aşamasında ve erişim iki adımlı: önce “Seklio Alpha Channel” Google Grubu’na katılıyorsun, ardından uygulamayı aynı Google hesabıyla Play sayfasından yüklüyorsun. Üyeliğinin Google Play’e işlemesi biraz zaman alabilir; sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip yeniden dene. Alfa APK’sını gruba üye olmadan, doğrudan GitHub Releases sayfamızdan da indirebilirsin. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
       },
       {
         q: 'Premium ne katıyor?',
