@@ -27,7 +27,7 @@ export const tr: Dict = {
     subtitle:
       'Seklio, yakındaki telefonları Bluetooth ve Wi-Fi üzerinden doğrudan birbirine bağlar; mesajlarınız cihazdan cihaza uzanan bir örgü ağ üzerinden taşınır. Sunucu yok, hesap yok, telefon numarası yok — ve her şey uçtan uca şifreli.',
     ctaIos: 'iOS betasına katıl',
-    ctaAlpha: 'Google Groups’ta alfa testine katıl',
+    ctaAndroidDl: 'Android için indir',
     ctaOther: 'Diğer indirme seçenekleri',
     ctaDownloads: 'İndirmeler',
     note: 'Ücretsiz · iOS açık betası TestFlight’ta · Android alfası Google Play’de, APK GitHub’da',
@@ -124,8 +124,10 @@ export const tr: Dict = {
     iosBody: 'TestFlight üzerinden açık beta. TestFlight uygulamasını kurun, tek dokunuşla katılın.',
     iosCta: 'TestFlight’ta katıl',
     androidTitle: 'Android',
-    androidBody: 'Android alfası Google Play’de. “Seklio Alpha Channel” Google Grubu’na katıldığınızda uygulama Play’de hesabınıza açılıyor. Dilerseniz APK’yı doğrudan GitHub Releases’tan da indirebilirsiniz.',
-    alphaCta: 'Google Groups’ta Alfa Testine Katıl',
+    androidBody: 'Android alfası iki adımda: önce “Seklio Alpha Channel” Google Grubu’na katılın, ardından uygulamayı Google Play’den yükleyin. Dilerseniz APK’yı doğrudan GitHub Releases’tan da indirebilirsiniz.',
+    alphaCta: '1 · Google Groups’ta Alfa Testine Katıl',
+    playWaitNote: 'Üyeliğinizin Google Play’e işlemesi biraz zaman alabilir — sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip 2. adımı yeniden deneyin.',
+    playCta: '2 · Google Play’den edinin',
     androidCta: 'APK indir',
   },
 
@@ -167,7 +169,7 @@ export const tr: Dict = {
       },
       {
         q: 'Android sürümü var mı?',
-        a: 'Evet — Android şu an Google Play’de alfa aşamasında. Önce “Seklio Alpha Channel” Google Grubu’na katılmanız gerekiyor; üye olduktan sonra uygulama, aynı Google hesabıyla girdiğiniz Play’de görünür hale geliyor. Alfa APK’sını gruba üye olmadan, doğrudan GitHub Releases sayfamızdan da indirebilirsiniz. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
+        a: 'Evet — Android şu an Google Play’de alfa aşamasında ve erişim iki adımlı: önce “Seklio Alpha Channel” Google Grubu’na katılıyorsunuz, ardından uygulamayı aynı Google hesabıyla Play sayfasından yüklüyorsunuz. Üyeliğinizin Google Play’e işlemesi biraz zaman alabilir; sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip yeniden deneyin. Alfa APK’sını gruba üye olmadan, doğrudan GitHub Releases sayfamızdan da indirebilirsiniz. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
       },
       {
         q: 'Premium ne katıyor?',

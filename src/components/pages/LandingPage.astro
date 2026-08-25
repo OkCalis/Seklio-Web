@@ -42,8 +42,8 @@ const structuredData = JSON.stringify({
           <a class="btn btn-primary plat plat-ios" href={SITE.testflightUrl} rel="noopener">
             {d.hero.ctaIos}
           </a>
-          <a class="btn btn-primary plat plat-android" href={SITE.alphaGroupUrl}>
-            {d.hero.ctaAlpha}
+          <a class="btn btn-primary plat plat-android" href="#download-android">
+            {d.hero.ctaAndroidDl}
           </a>
           <a class="btn btn-secondary plat plat-ios plat-android" href="#download">
             {d.hero.ctaOther}
@@ -186,12 +186,14 @@ const structuredData = JSON.stringify({
             {d.download.iosCta}
           </a>
         </div>
-        <div class="download-card" data-card="android">
+        <div class="download-card" data-card="android" id="download-android">
           <div class="platform-icon"><Icon name="android" /></div>
           <h3>{d.download.androidTitle}</h3>
           <p>{d.download.androidBody}</p>
           <div class="btn-stack">
             <a class="btn btn-primary" href={SITE.alphaGroupUrl}>{d.download.alphaCta}</a>
+            <p class="wait-note">{d.download.playWaitNote}</p>
+            <a class="btn btn-primary" href={SITE.playStoreUrl}>{d.download.playCta}</a>
             <a class="btn btn-secondary" href={SITE.androidApkUrl} data-apk-button>
               {d.download.androidCta}
             </a>

@@ -25,7 +25,7 @@ export const en = {
     subtitle:
       'Seklio connects nearby phones directly over Bluetooth and Wi-Fi, forming a mesh that carries your messages from device to device. No servers, no accounts, no phone numbers — and everything is end-to-end encrypted.',
     ctaIos: 'Join the iOS beta',
-    ctaAlpha: 'Join the alpha test on Google Groups',
+    ctaAndroidDl: 'Download for Android',
     ctaOther: 'Other download options',
     ctaDownloads: 'Downloads',
     note: 'Free · iOS public beta on TestFlight · Android alpha on Google Play & APK on GitHub',
@@ -122,8 +122,10 @@ export const en = {
     iosBody: 'Public beta via TestFlight. Install the TestFlight app, then join with one tap.',
     iosCta: 'Join on TestFlight',
     androidTitle: 'Android',
-    androidBody: 'In alpha on Google Play: join the “Seklio Alpha Channel” Google Group and the Play listing unlocks for your account. Or grab the APK straight from GitHub Releases.',
-    alphaCta: 'Join Alpha Test on Google Groups',
+    androidBody: 'The Android alpha takes two steps: join the “Seklio Alpha Channel” Google Group, then install from Google Play. Prefer sideloading? The APK is on GitHub Releases.',
+    alphaCta: '1 · Join Alpha Test on Google Groups',
+    playWaitNote: 'Membership can take a while to reach Google Play — if the listing says the app isn’t available yet, wait a bit and try step 2 again.',
+    playCta: '2 · Get it on Google Play',
     androidCta: 'Download APK',
   },
 
@@ -165,7 +167,7 @@ export const en = {
       },
       {
         q: 'Is there an Android version?',
-        a: 'Yes — Android is in alpha on Google Play. Join the “Seklio Alpha Channel” Google Group first; once you’re a member, the Play listing unlocks for the same Google account. The alpha APK is also downloadable directly from our GitHub Releases page, no group needed. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
+        a: 'Yes — Android is in alpha on Google Play, in two steps: join the “Seklio Alpha Channel” Google Group, then install from the Play listing with the same Google account. Membership can take a while to reach Google Play, so if the listing says the app isn’t available yet, wait a bit and try again. The alpha APK is also downloadable directly from our GitHub Releases page, no group needed. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
       },
       {
         q: 'What does Premium add?',

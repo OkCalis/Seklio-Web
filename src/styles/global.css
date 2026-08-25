@@ -546,6 +546,18 @@ html[data-platform='android'] .hero-ctas .plat-android {
   gap: 10px;
 }
 
+.download-card {
+  /* Anchored cards (#download-android) shouldn't hide under the sticky header. */
+  scroll-margin-top: 84px;
+}
+
+.wait-note {
+  font-size: 0.82rem;
+  color: var(--ink-soft);
+  margin: 2px 0;
+  max-width: 30em;
+}
+
 /* ---------- FAQ ---------- */
 .faq-list {
   max-width: 760px;
