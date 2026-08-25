@@ -122,10 +122,11 @@ export const en = {
     iosBody: 'Public beta via TestFlight. Install the TestFlight app, then join with one tap.',
     iosCta: 'Join on TestFlight',
     androidTitle: 'Android',
-    androidBody: 'The Android alpha takes two steps: join the “Seklio Alpha Channel” Google Group, then install from Google Play. Prefer sideloading? The APK is on GitHub Releases.',
+    androidBody: 'The Android alpha takes two steps: join the “Seklio Alpha Channel” Google Group, then install from Google Play.',
     alphaCta: '1 · Join Alpha Test on Google Groups',
     playWaitNote: 'Membership can take a while to reach Google Play — if the listing says the app isn’t available yet, wait a bit and try step 2 again.',
     playCta: '2 · Get it on Google Play',
+    apkAltNote: 'Or skip both steps — the APK is the same app without the Google Play requirement. It works even on phones without Google Play services.',
     androidCta: 'Download APK',
   },
 
@@ -167,7 +168,7 @@ export const en = {
       },
       {
         q: 'Is there an Android version?',
-        a: 'Yes — Android is in alpha on Google Play, in two steps: join the “Seklio Alpha Channel” Google Group, then install from the Play listing with the same Google account. Membership can take a while to reach Google Play, so if the listing says the app isn’t available yet, wait a bit and try again. The alpha APK is also downloadable directly from our GitHub Releases page, no group needed. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
+        a: 'Yes — Android is in alpha on Google Play, in two steps: join the “Seklio Alpha Channel” Google Group, then install from the Play listing with the same Google account. Membership can take a while to reach Google Play, so if the listing says the app isn’t available yet, wait a bit and try again. The alpha APK is also downloadable directly from our GitHub Releases page — no group needed, and it works even on phones without Google Play services. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
       },
       {
         q: 'What does Premium add?',
@@ -221,7 +222,7 @@ export const en = {
       {
         h: 'Beta programs',
         ps: [
-          'If you join the iOS beta via TestFlight, Apple collects limited beta-program data (such as crash logs and basic device info) under Apple’s own terms and privacy policy. The Android beta APK is distributed via GitHub; downloading it is subject to GitHub’s terms.',
+          'If you join the iOS beta via TestFlight, Apple collects limited beta-program data (such as crash logs and basic device info) under Apple’s own terms and privacy policy. The Android alpha is distributed via Google Play and GitHub; those channels are subject to their own terms.',
         ],
       },
       {
