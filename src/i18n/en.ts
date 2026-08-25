@@ -23,7 +23,7 @@ export const en = {
     badge: 'No internet required',
     title: 'Messaging that doesn’t need the internet.',
     subtitle:
-      'Seklio connects nearby phones directly over Bluetooth and Wi-Fi, forming a mesh that carries your messages from device to device. No servers, no accounts, no phone numbers — and everything is end-to-end encrypted.',
+      'Seklio connects nearby phones directly over Bluetooth and Wi-Fi, forming a mesh that carries your messages from device to device. No servers, no accounts, no phone numbers, and everything is end-to-end encrypted.',
     ctaIos: 'Join the iOS beta',
     ctaAndroidDl: 'Download for Android',
     ctaOther: 'Other download options',
@@ -40,12 +40,12 @@ export const en = {
       {
         title: 'Phones find each other nearby',
         body:
-          'Seklio discovers other phones around you over Bluetooth LE and local Wi-Fi. No SIM, no coverage, no setup — if you’re near each other, you’re connected.',
+          'Seklio discovers other phones around you over Bluetooth LE and local Wi-Fi. No SIM, no coverage, no setup; if you’re near each other, you’re connected.',
       },
       {
         title: 'Messages hop device to device',
         body:
-          'Every phone running Seklio relays sealed envelopes onward. Friends beyond direct range are reached through the phones in between — that’s the mesh.',
+          'Every phone running Seklio relays sealed envelopes onward. Friends beyond direct range are reached through the phones in between. That’s the mesh.',
       },
       {
         title: 'Only the recipient can read',
@@ -62,33 +62,33 @@ export const en = {
       {
         icon: 'lock',
         title: 'End-to-end encrypted',
-        body: 'Modern, proven cryptography — Ed25519 signatures, X25519 key agreement, ChaCha20-Poly1305 encryption — seals every message.',
+        body: 'Modern, proven cryptography (Ed25519 signatures, X25519 key agreement, ChaCha20-Poly1305 encryption) seals every message.',
       },
       {
         icon: 'id',
         title: 'No accounts, no numbers',
-        body: 'Your identity is a keypair created on your phone. No phone number, no email, no sign-up — pick a handle and go.',
+        body: 'Your identity is a keypair created on your phone. No phone number, no email, no sign-up; pick a handle and go.',
       },
       {
         icon: 'offline',
         title: 'Works without coverage',
-        body: 'Crowded events, campuses, flights, remote trails, power cuts — wherever the network fails, the mesh keeps working.',
+        body: 'Crowded events, campuses, flights, remote trails, power cuts: wherever the network fails, the mesh keeps working.',
       },
       {
         icon: 'clock',
         title: 'Delivers later, too',
-        body: 'If your friend is out of reach, your encrypted message waits and travels through phones that meet them — for up to 7 days.',
+        body: 'If your friend is out of reach, your encrypted message waits and travels through phones that meet them, for up to 7 days.',
       },
       {
         icon: 'circles',
         title: 'Circles',
-        body: 'Private encrypted groups with QR-code invites. Only invited members hold the key — relays can’t peek.',
+        body: 'Private encrypted groups with QR-code invites. Only invited members hold the key; relays can’t peek.',
         soon: true,
       },
       {
         icon: 'megaphone',
         title: 'Broadcasts',
-        body: 'Say something to everyone in range at once — signed, so receivers always know it really came from you.',
+        body: 'Say something to everyone in range at once. It’s signed, so receivers always know it really came from you.',
       },
       {
         icon: 'photo',
@@ -106,10 +106,10 @@ export const en = {
   privacy: {
     title: 'Nothing to collect. Nowhere to collect it.',
     body:
-      'Seklio has no servers, no analytics, and no user database — the infrastructure that usually watches you simply doesn’t exist here.',
+      'Seklio has no servers, no analytics, and no user database; the infrastructure that usually watches you simply doesn’t exist here.',
     points: [
       'Messages live only on your phone and the recipient’s.',
-      'Your identity never leaves your device — it’s a key, not a profile.',
+      'Your identity never leaves your device; it’s a key, not a profile.',
       'No tracking, no ads, no data sharing. There’s nothing to share.',
     ],
     link: 'Read the privacy policy',
@@ -124,7 +124,7 @@ export const en = {
     androidTitle: 'Android',
     androidBody: 'The Android alpha takes two steps: join the “Seklio Alpha Channel” Google Group, then install from Google Play.',
     alphaCta: '1 · Join Alpha Test on Google Groups',
-    playWaitNote: 'Membership can take a while to reach Google Play — if the listing says the app isn’t available yet, wait a bit and try step 2 again.',
+    playWaitNote: 'Membership can take a while to reach Google Play; if the listing says the app isn’t available yet, wait a bit and try step 2 again.',
     playCta: '2 · Get it on Google Play',
     apkAltNote: 'You can alternatively download the APK if you don’t have access to Google Play Services or if you just prefer sideloading.',
     androidCta: 'Download APK',
@@ -136,11 +136,11 @@ export const en = {
     items: [
       {
         q: 'Does Seklio need the internet?',
-        a: 'No. Phones connect to each other directly over Bluetooth LE and local Wi-Fi. There are no servers involved at any point — Seklio works the same in airplane-mode Wi-Fi, on a shared network, or with no infrastructure at all.',
+        a: 'No. Phones connect to each other directly over Bluetooth LE and local Wi-Fi. There are no servers involved at any point; Seklio works the same in airplane-mode Wi-Fi, on a shared network, or with no infrastructure at all.',
       },
       {
         q: 'How far does it reach?',
-        a: 'A direct link reaches as far as Bluetooth or your local Wi-Fi network does. But messages don’t stop there: each phone relays them onward, so your real reach is the whole connected mesh — a message can hop through up to 7 phones (15 for broadcasts) to find its recipient.',
+        a: 'A direct link reaches as far as Bluetooth or your local Wi-Fi network does. But messages don’t stop there: each phone relays them onward, so your real reach is the whole connected mesh; a message can hop through up to 7 phones (15 for broadcasts) to find its recipient.',
       },
       {
         q: 'Is it really private?',
@@ -152,23 +152,23 @@ export const en = {
       },
       {
         q: 'Can I message someone who isn’t nearby right now?',
-        a: 'Yes. Your encrypted message is stored on your phone (and on phones that have a stake in delivering it) and handed over whenever a path to the recipient appears — for up to 7 days. Delivery is confirmed end-to-end, so your bubble tells you when it truly arrived.',
+        a: 'Yes. Your encrypted message is stored on your phone (and on phones that have a stake in delivering it) and handed over whenever a path to the recipient appears (for up to 7 days). Delivery is confirmed end-to-end, so your bubble tells you when it truly arrived.',
       },
       {
         q: 'Does it drain my battery?',
-        a: 'Seklio is built around Bluetooth Low Energy, which is designed for all-day background use, and switches to Wi-Fi links when they’re available — faster and cheaper per byte. It’s comparable to other always-nearby apps, not to GPS-style drain.',
+        a: 'Seklio is built around Bluetooth Low Energy, which is designed for all-day background use, and switches to Wi-Fi links when they’re available (faster and cheaper per byte). It’s comparable to other always-nearby apps, not to GPS-style drain.',
       },
       {
         q: 'Do I need a phone number or an email?',
-        a: 'No. Your identity is a cryptographic keypair generated on your device. You pick a handle (like @irem) — that’s all anyone sees, and you can change it anytime.',
+        a: 'No. Your identity is a cryptographic keypair generated on your device. You pick a handle (like @irem); that’s all anyone sees, and you can change it anytime.',
       },
       {
         q: 'Do I have to use my real name?',
-        a: 'No — real names are completely optional. Everyone sees only your handle. If you choose to add your real name, it’s shared end-to-end encrypted only with friends you’ve verified in person; it’s never broadcast to the network, and you can withdraw it at any time.',
+        a: 'No, real names are completely optional. Everyone sees only your handle. If you choose to add your real name, it’s shared end-to-end encrypted only with friends you’ve verified in person; it’s never broadcast to the network, and you can withdraw it at any time.',
       },
       {
         q: 'Is there an Android version?',
-        a: 'Yes — Android is in alpha on Google Play, in two steps: join the “Seklio Alpha Channel” Google Group, then install from the Play listing with the same Google account. Membership can take a while to reach Google Play, so if the listing says the app isn’t available yet, wait a bit and try again. The alpha APK is also downloadable directly from our GitHub Releases page, no group needed. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
+        a: 'Yes. Android is in alpha on Google Play, in two steps: join the “Seklio Alpha Channel” Google Group, then install from the Play listing with the same Google account. Membership can take a while to reach Google Play, so if the listing says the app isn’t available yet, wait a bit and try again. The alpha APK is also downloadable directly from our GitHub Releases page, no group needed. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
       },
       {
         q: 'What does Premium add?',
@@ -176,7 +176,7 @@ export const en = {
       },
       {
         q: 'Is my chat history backed up somewhere?',
-        a: 'Not by Seklio — there are no Seklio servers, and the app never uploads your chats anywhere itself. On iOS, your history is part of your phone’s normal device backup: if you back up to iCloud, your chats are included under your iCloud account’s protection and restored along with the rest of your data. Either way, nobody at Seklio can read, hand over, or mine your history.',
+        a: 'Not by Seklio: there are no Seklio servers, and the app never uploads your chats anywhere itself. On iOS, your history is part of your phone’s normal device backup: if you back up to iCloud, your chats are included under your iCloud account’s protection and restored along with the rest of your data. Either way, nobody at Seklio can read, hand over, or mine your history.',
       },
     ],
   },
@@ -188,7 +188,7 @@ export const en = {
       {
         h: 'The short version',
         ps: [
-          'Seklio has no servers and no user accounts. We do not collect, store, process, or share any personal data — the infrastructure to do so does not exist.',
+          'Seklio has no servers and no user accounts. We do not collect, store, process, or share any personal data; the infrastructure to do so does not exist.',
           'Your messages travel directly between phones, end-to-end encrypted, and are stored only on the devices involved.',
         ],
       },
@@ -203,13 +203,13 @@ export const en = {
         h: 'What stays on your device',
         ps: [
           'Your profile (handle, avatar, optional birth-year attestation), your conversations, your keys, and your settings are stored locally on your phone, protected by your device’s security (Keychain / Keystore).',
-          'Messages you exchange are also stored on the recipients’ devices, as with any messenger. Encrypted copies of undelivered messages may temporarily sit on relaying phones in the mesh — those phones cannot read them.',
+          'Messages you exchange are also stored on the recipients’ devices, as with any messenger. Encrypted copies of undelivered messages may temporarily sit on relaying phones in the mesh; those phones cannot read them.',
         ],
       },
       {
         h: 'Diagnostics reports (optional, manual)',
         ps: [
-          'If you choose to report a bug, the app can create a diagnostics file. It contains technical logs only — never message content, display names, or full identifiers — and it is encrypted on your phone so that only the developer can open it.',
+          'If you choose to report a bug, the app can create a diagnostics file. It contains technical logs only (never message content, display names, or full identifiers), and it is encrypted on your phone so that only the developer can open it.',
           'You send this file yourself (for example by email). Nothing is ever transmitted automatically.',
         ],
       },
@@ -250,7 +250,7 @@ export const en = {
     sections: [
       {
         h: 'Start with the FAQ',
-        ps: ['Most questions — range, battery, privacy, offline delivery — are answered in the {faq}.'],
+        ps: ['Most questions (range, battery, privacy, offline delivery) are answered in the {faq}.'],
       },
       {
         h: 'Report a bug from inside the app',

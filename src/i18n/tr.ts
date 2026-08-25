@@ -25,7 +25,7 @@ export const tr: Dict = {
     badge: 'İnternet gerekmez',
     title: 'İnternete ihtiyaç duymayan mesajlaşma.',
     subtitle:
-      'Seklio, yakındaki telefonları Bluetooth ve Wi-Fi üzerinden doğrudan birbirine bağlar; mesajların cihazdan cihaza uzanan bir örgü ağ üzerinden taşınır. Sunucu yok, hesap yok, telefon numarası yok — ve her şey uçtan uca şifreli.',
+      'Seklio, yakındaki telefonları Bluetooth ve Wi-Fi üzerinden doğrudan birbirine bağlar; mesajların cihazdan cihaza uzanan bir örgü ağ üzerinden taşınır. Sunucu yok, hesap yok, telefon numarası yok; her şey uçtan uca şifreli.',
     ctaIos: 'iOS betasına katıl',
     ctaAndroidDl: 'Android için indir',
     ctaOther: 'Diğer indirme seçenekleri',
@@ -42,12 +42,12 @@ export const tr: Dict = {
       {
         title: 'Telefonlar birbirini yakında bulur',
         body:
-          'Seklio, çevrendeki telefonları Bluetooth LE ve yerel Wi-Fi üzerinden keşfeder. SIM gerekmez, çekim gerekmez, kurulum gerekmez — yakındaysan bağlısın.',
+          'Seklio, çevrendeki telefonları Bluetooth LE ve yerel Wi-Fi üzerinden keşfeder. SIM gerekmez, çekim gerekmez, kurulum gerekmez; yakındaysan bağlısın.',
       },
       {
         title: 'Mesajlar cihazdan cihaza seker',
         body:
-          'Seklio çalıştıran her telefon, mühürlü zarfları bir sonrakine iletir. Mesajların telefondan telefona seke seke, doğrudan menzil dışındaki arkadaşlarına bile ulaşır — örgü ağ dediğimiz şey bu.',
+          'Seklio çalıştıran her telefon, mühürlü zarfları bir sonrakine iletir. Mesajların telefondan telefona seke seke, doğrudan menzil dışındaki arkadaşlarına bile ulaşır. Örgü ağ dediğimiz şey bu.',
       },
       {
         title: 'Yalnızca alıcı okuyabilir',
@@ -64,33 +64,33 @@ export const tr: Dict = {
       {
         icon: 'lock',
         title: 'Uçtan uca şifreli',
-        body: 'Modern ve kanıtlanmış kriptografi — Ed25519 imzaları, X25519 anahtar anlaşması, ChaCha20-Poly1305 şifrelemesi — her mesajı mühürler.',
+        body: 'Modern ve kanıtlanmış kriptografi (Ed25519 imzaları, X25519 anahtar anlaşması, ChaCha20-Poly1305 şifrelemesi) her mesajı mühürler.',
       },
       {
         icon: 'id',
         title: 'Hesap yok, numara yok',
-        body: 'Kimliğin telefonunda üretilen bir anahtar çiftidir. Telefon numarası yok, e-posta yok, kayıt yok — bir kullanıcı adı seç ve başla.',
+        body: 'Kimliğin telefonunda üretilen bir anahtar çiftidir. Telefon numarası yok, e-posta yok, kayıt yok; bir kullanıcı adı seç ve başla.',
       },
       {
         icon: 'offline',
         title: 'Çekim olmadan çalışır',
-        body: 'Kalabalık etkinlikler, kampüsler, uçuşlar, dağ başları, elektrik kesintileri — şebekenin yetmediği her yerde örgü ağ çalışmaya devam eder.',
+        body: 'Kalabalık etkinlikler, kampüsler, uçuşlar, dağ başları, elektrik kesintileri: şebekenin yetmediği her yerde örgü ağ çalışmaya devam eder.',
       },
       {
         icon: 'clock',
         title: 'Sonra da teslim eder',
-        body: 'Arkadaşın menzil dışındaysa şifreli mesajın bekler ve onunla karşılaşan telefonlar üzerinden yola devam eder — 7 güne kadar.',
+        body: 'Arkadaşın menzil dışındaysa şifreli mesajın bekler ve onunla karşılaşan telefonlar üzerinden 7 güne kadar yola devam eder.',
       },
       {
         icon: 'circles',
         title: 'Çevreler',
-        body: 'QR kodla davet edilen özel şifreli gruplar. Anahtar yalnızca davetli üyelerde — aradaki cihazlar içeriyi göremez.',
+        body: 'QR kodla davet edilen özel şifreli gruplar. Anahtar yalnızca davetli üyelerde; aradaki cihazlar içeriyi göremez.',
         soon: true,
       },
       {
         icon: 'megaphone',
         title: 'Duyurular',
-        body: 'Menzildeki herkese tek seferde seslen — imzalı olduğu için alıcılar mesajın gerçekten senden geldiğini bilir.',
+        body: 'Menzildeki herkese tek seferde seslen. İmzalı olduğu için alıcılar mesajın gerçekten senden geldiğini bilir.',
       },
       {
         icon: 'photo',
@@ -108,10 +108,10 @@ export const tr: Dict = {
   privacy: {
     title: 'Toplanacak bir şey yok. Toplanacak bir yer de yok.',
     body:
-      'Seklio’da sunucu, analitik ya da kullanıcı veritabanı yoktur — seni izlemesi beklenen altyapı burada hiç var olmadı.',
+      'Seklio’da sunucu, analitik ya da kullanıcı veritabanı yoktur; seni izlemesi beklenen altyapı burada hiç var olmadı.',
     points: [
       'Mesajlar yalnızca senin ve alıcının telefonunda yaşar.',
-      'Kimliğin cihazından asla çıkmaz — bir profil değil, bir anahtardır.',
+      'Kimliğin cihazından asla çıkmaz; bir profil değil, bir anahtardır.',
       'Takip yok, reklam yok, veri paylaşımı yok. Paylaşılacak bir şey yok.',
     ],
     link: 'Gizlilik politikasını oku',
@@ -126,7 +126,7 @@ export const tr: Dict = {
     androidTitle: 'Android',
     androidBody: 'Android alfası iki adımda: önce “Seklio Alpha Channel” Google Grubu’na katıl, ardından uygulamayı Google Play’den yükle.',
     alphaCta: '1 · Google Groups’ta Alfa Testine Katıl',
-    playWaitNote: 'Üyeliğinin Google Play’e işlemesi biraz zaman alabilir — sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip 2. adımı yeniden dene.',
+    playWaitNote: 'Üyeliğinin Google Play’e işlemesi biraz zaman alabilir; sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip 2’nci adımı yeniden dene.',
     playCta: '2 · Google Play’den edin',
     apkAltNote: 'Google Play Hizmetleri’ne erişimin yoksa ya da elden kurulumu tercih ediyorsan, alternatif olarak APK’yı da indirebilirsin.',
     androidCta: 'APK indir',
@@ -138,11 +138,11 @@ export const tr: Dict = {
     items: [
       {
         q: 'Seklio internete ihtiyaç duyar mı?',
-        a: 'Hayır. Telefonlar Bluetooth LE ve yerel Wi-Fi üzerinden doğrudan birbirine bağlanır. Hiçbir aşamada sunucu yoktur — Seklio uçak modundaki Wi-Fi’da da, ortak bir ağda da, hiçbir altyapı yokken de aynı şekilde çalışır.',
+        a: 'Hayır. Telefonlar Bluetooth LE ve yerel Wi-Fi üzerinden doğrudan birbirine bağlanır. Hiçbir aşamada sunucu yoktur; Seklio uçak modundaki Wi-Fi’da da, ortak bir ağda da, hiçbir altyapı yokken de aynı şekilde çalışır.',
       },
       {
         q: 'Menzili ne kadar?',
-        a: 'Doğrudan bağlantı, Bluetooth’un ya da yerel Wi-Fi ağının eriştiği yere kadar uzanır. Ama mesajlar orada durmaz: her telefon onları bir sonrakine iletir, yani gerçek menzilin bağlı örgü ağın tamamıdır — bir mesaj alıcısını bulmak için 7 telefona kadar (duyurularda 15) sekebilir.',
+        a: 'Doğrudan bağlantı, Bluetooth’un ya da yerel Wi-Fi ağının eriştiği yere kadar uzanır. Ama mesajlar orada durmaz: her telefon onları bir sonrakine iletir, yani gerçek menzilin bağlı örgü ağın tamamıdır; bir mesaj alıcısını bulmak için 7 telefona kadar (duyurularda 15) sekebilir.',
       },
       {
         q: 'Gerçekten gizli mi?',
@@ -154,7 +154,7 @@ export const tr: Dict = {
       },
       {
         q: 'Şu anda yakınımda olmayan birine mesaj atabilir miyim?',
-        a: 'Evet. Şifreli mesajın telefonunda (ve teslimatında payı olan telefonlarda) saklanır, alıcıya giden bir yol belirdiğinde iletilir — 7 güne kadar. Teslimat uçtan uca onaylanır; baloncuğun mesajın gerçekten ulaştığını söyler.',
+        a: 'Evet. Şifreli mesajın telefonunda (ve teslimatında payı olan telefonlarda) saklanır, alıcıya giden bir yol belirdiğinde iletilir (7 güne kadar). Teslimat uçtan uca onaylanır; baloncuğun mesajın gerçekten ulaştığını söyler.',
       },
       {
         q: 'Pilimi bitirir mi?',
@@ -162,15 +162,15 @@ export const tr: Dict = {
       },
       {
         q: 'Telefon numarası ya da e-posta gerekiyor mu?',
-        a: 'Hayır. Kimliğin cihazında üretilen bir kriptografik anahtar çiftidir. Bir kullanıcı adı seçersin (ör. @irem) — başkalarının gördüğü tek şey budur ve onu istediğin zaman değiştirebilirsin.',
+        a: 'Hayır. Kimliğin cihazında üretilen bir kriptografik anahtar çiftidir. Bir kullanıcı adı seçersin (ör. @irem); başkalarının gördüğü tek şey budur ve onu istediğin zaman değiştirebilirsin.',
       },
       {
         q: 'Gerçek adımı kullanmak zorunda mıyım?',
-        a: 'Hayır — gerçek ad tamamen isteğe bağlıdır. Herkes yalnızca kullanıcı adını görür. Gerçek adını eklemeyi seçersen, yalnızca yüz yüze doğruladığın arkadaşlarınla uçtan uca şifreli olarak paylaşılır; asla ağa yayınlanmaz ve istediğin zaman geri çekebilirsin.',
+        a: 'Hayır, gerçek ad tamamen isteğe bağlıdır. Herkes yalnızca kullanıcı adını görür. Gerçek adını eklemeyi seçersen, yalnızca yüz yüze doğruladığın arkadaşlarınla uçtan uca şifreli olarak paylaşılır; asla ağa yayınlanmaz ve istediğin zaman geri çekebilirsin.',
       },
       {
         q: 'Android sürümü var mı?',
-        a: 'Evet — Android şu an Google Play’de alfa aşamasında ve erişim iki adımlı: önce “Seklio Alpha Channel” Google Grubu’na katılıyorsun, ardından uygulamayı aynı Google hesabıyla Play sayfasından yüklüyorsun. Üyeliğinin Google Play’e işlemesi biraz zaman alabilir; sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip yeniden dene. Alfa APK’sını gruba üye olmadan, doğrudan GitHub Releases sayfamızdan da indirebilirsin. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
+        a: 'Evet. Android şu an Google Play’de alfa aşamasında ve erişim iki adımlı: önce “Seklio Alpha Channel” Google Grubu’na katılıyorsun, ardından uygulamayı aynı Google hesabıyla Play sayfasından yüklüyorsun. Üyeliğinin Google Play’e işlemesi biraz zaman alabilir; sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip yeniden dene. Alfa APK’sını gruba üye olmadan, doğrudan GitHub Releases sayfamızdan da indirebilirsin. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
       },
       {
         q: 'Premium ne katıyor?',
@@ -178,7 +178,7 @@ export const tr: Dict = {
       },
       {
         q: 'Sohbet geçmişim bir yere yedekleniyor mu?',
-        a: 'Seklio tarafından değil — Seklio’nun sunucusu yoktur ve uygulama sohbetlerini kendiliğinden hiçbir yere yüklemez. iOS’ta geçmişin, telefonunun normal cihaz yedeğinin bir parçasıdır: telefonunu iCloud’a yedekliyorsan sohbetlerin de iCloud hesabının koruması altında yedeğe dahil olur ve diğer verilerinle birlikte geri yüklenir. Her durumda Seklio tarafında geçmişini okuyabilecek, teslim edebilecek ya da işleyebilecek kimse yoktur.',
+        a: 'Seklio tarafından değil: Seklio’nun sunucusu yoktur ve uygulama sohbetlerini kendiliğinden hiçbir yere yüklemez. iOS’ta geçmişin, telefonunun normal cihaz yedeğinin bir parçasıdır: telefonunu iCloud’a yedekliyorsan sohbetlerin de iCloud hesabının koruması altında yedeğe dahil olur ve diğer verilerinle birlikte geri yüklenir. Her durumda Seklio tarafında geçmişini okuyabilecek, teslim edebilecek ya da işleyebilecek kimse yoktur.',
       },
     ],
   },
@@ -190,7 +190,7 @@ export const tr: Dict = {
       {
         h: 'Kısa özet',
         ps: [
-          'Seklio’nun sunucusu ve kullanıcı hesabı yoktur. Hiçbir kişisel veri toplamayız, saklamayız, işlemeyiz ve paylaşmayız — bunu yapacak altyapı mevcut değildir.',
+          'Seklio’nun sunucusu ve kullanıcı hesabı yoktur. Hiçbir kişisel veri toplamayız, saklamayız, işlemeyiz ve paylaşmayız; bunu yapacak altyapı mevcut değildir.',
           'Mesajların telefonlar arasında doğrudan, uçtan uca şifreli olarak taşınır ve yalnızca ilgili cihazlarda saklanır.',
         ],
       },
@@ -205,13 +205,13 @@ export const tr: Dict = {
         h: 'Cihazında kalanlar',
         ps: [
           'Profilin (kullanıcı adı, avatar, isteğe bağlı yaş beyanı), sohbetlerin, anahtarların ve ayarların telefonunda yerel olarak, cihazının güvenlik mekanizmalarıyla (Keychain / Keystore) korunarak saklanır.',
-          'Alıcılarla paylaştığın mesajlar, her mesajlaşma uygulamasında olduğu gibi onların cihazlarında da bulunur. Henüz teslim edilmemiş mesajların şifreli kopyaları, örgü ağdaki aracı telefonlarda geçici olarak bekleyebilir — bu telefonlar onları okuyamaz.',
+          'Alıcılarla paylaştığın mesajlar, her mesajlaşma uygulamasında olduğu gibi onların cihazlarında da bulunur. Henüz teslim edilmemiş mesajların şifreli kopyaları, örgü ağdaki aracı telefonlarda geçici olarak bekleyebilir; bu telefonlar onları okuyamaz.',
         ],
       },
       {
         h: 'Tanılama raporları (isteğe bağlı, manuel)',
         ps: [
-          'Bir hata bildirmek istersen uygulama bir tanılama dosyası oluşturabilir. Bu dosya yalnızca teknik kayıtlar içerir — asla mesaj içeriği, görünen adlar veya tam tanımlayıcılar içermez — ve yalnızca geliştiricinin açabileceği şekilde telefonunda şifrelenir.',
+          'Bir hata bildirmek istersen uygulama bir tanılama dosyası oluşturabilir. Bu dosya yalnızca teknik kayıtlar içerir (asla mesaj içeriği, görünen adlar veya tam tanımlayıcılar içermez) ve yalnızca geliştiricinin açabileceği şekilde telefonunda şifrelenir.',
           'Bu dosyayı kendin gönderirsin (örneğin e-postayla). Hiçbir şey otomatik olarak iletilmez.',
         ],
       },
@@ -252,7 +252,7 @@ export const tr: Dict = {
     sections: [
       {
         h: 'Önce SSS’ye bak',
-        ps: ['Soruların çoğu — menzil, pil, gizlilik, çevrimdışı teslimat — {faq} sayfasında yanıtlı.'],
+        ps: ['Soruların çoğu (menzil, pil, gizlilik, çevrimdışı teslimat) {faq} sayfasında yanıtlı.'],
       },
       {
         h: 'Hatayı uygulamanın içinden bildir',
