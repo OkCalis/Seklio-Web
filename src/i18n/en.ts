@@ -16,7 +16,7 @@ export const en = {
     howItWorks: 'How it works',
     faq: 'FAQ',
     support: 'Support',
-    download: 'Get the beta',
+    download: 'Download',
   },
 
   hero: {
@@ -26,7 +26,8 @@ export const en = {
       'Seklio connects nearby phones directly over Bluetooth and Wi-Fi, forming a mesh that carries your messages from device to device. No servers, no accounts, no phone numbers — and everything is end-to-end encrypted.',
     ctaIos: 'Join the iOS beta',
     ctaAlpha: 'Join the alpha test on Google Groups',
-    ctaAndroid: 'Get the Android APK',
+    ctaOther: 'Other download options',
+    ctaDownloads: 'Downloads',
     note: 'Free · iOS public beta on TestFlight · Android alpha on Google Play & APK on GitHub',
   },
 

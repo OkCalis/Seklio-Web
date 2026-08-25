@@ -18,7 +18,7 @@ export const tr: Dict = {
     howItWorks: 'Nasıl çalışır',
     faq: 'SSS',
     support: 'Destek',
-    download: 'Betaya katıl',
+    download: 'İndir',
   },
 
   hero: {
@@ -28,7 +28,8 @@ export const tr: Dict = {
       'Seklio, yakındaki telefonları Bluetooth ve Wi-Fi üzerinden doğrudan birbirine bağlar; mesajlarınız cihazdan cihaza uzanan bir örgü ağ üzerinden taşınır. Sunucu yok, hesap yok, telefon numarası yok — ve her şey uçtan uca şifreli.',
     ctaIos: 'iOS betasına katıl',
     ctaAlpha: 'Google Groups’ta alfa testine katıl',
-    ctaAndroid: 'Android APK indir',
+    ctaOther: 'Diğer indirme seçenekleri',
+    ctaDownloads: 'İndirmeler',
     note: 'Ücretsiz · iOS açık betası TestFlight’ta · Android alfası Google Play’de, APK GitHub’da',
   },
 

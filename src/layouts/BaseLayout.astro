@@ -37,6 +37,17 @@ const canonical = SITE.url + path(locale);
     <meta property="og:image" content={SITE.url + '/og-image.jpg'} />
     <meta name="twitter:card" content="summary" />
     <meta name="theme-color" content="#f25c05" />
+    <script is:inline>
+      // Stamp the visitor's platform before first paint; CSS shows the
+      // matching download options. Macs count as iOS (Apple-silicon Macs
+      // can install the iOS app; iPadOS 13+ also reports a "Macintosh" UA).
+      (() => {
+        const ua = navigator.userAgent;
+        const isIOS = /iPad|iPhone|iPod|Macintosh/.test(ua) || /^Mac/.test(navigator.platform);
+        const isAndroid = !isIOS && /Android/i.test(ua);
+        document.documentElement.dataset.platform = isIOS ? 'ios' : isAndroid ? 'android' : 'other';
+      })();
+    </script>
   </head>
   <body>
     <Header locale={locale} slug={slug} />
