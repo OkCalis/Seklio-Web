@@ -488,6 +488,9 @@ html[data-platform='android'] .hero-ctas .plat-android {
 .download-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  /* Cards size to their own content instead of stretching to match
+     the taller sibling (the Android card is much taller than iOS). */
+  align-items: start;
   gap: 24px;
   max-width: 760px;
   margin: 0 auto;
