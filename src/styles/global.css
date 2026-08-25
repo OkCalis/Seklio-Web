@@ -762,7 +762,10 @@ html[data-platform='android'] .hero-ctas .plat-android {
     grid-template-columns: 1fr 1fr;
   }
 
-  .main-nav a:not(.btn) {
+  /* Hide the text nav links on small screens, but only the nav's own
+     direct links — the language switcher's EN/TR links stay visible
+     (matching them left the switcher as an empty pill). */
+  .main-nav > a:not(.btn) {
     display: none;
   }
 }
