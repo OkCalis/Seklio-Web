@@ -276,7 +276,7 @@ export const en = {
     resources: 'Resources',
     legal: 'Privacy & Support',
     language: 'Language',
-    rights: '© 2026 Okan Çalış. All rights reserved.',
+    rights: '© 2026 Okan Çalış',
   },
 
   notFound: {
