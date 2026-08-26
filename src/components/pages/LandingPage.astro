@@ -11,6 +11,13 @@ interface Props {
 const { locale } = Astro.props;
 const d = t(locale);
 
+const author = {
+  '@type': 'Person',
+  name: 'Okan Çalış',
+  url: 'https://www.linkedin.com/in/okancalis',
+  sameAs: ['https://www.linkedin.com/in/okancalis', 'https://github.com/OkCalis'],
+};
+
 const structuredData = JSON.stringify({
   '@context': 'https://schema.org',
   '@type': 'SoftwareApplication',
@@ -20,6 +27,8 @@ const structuredData = JSON.stringify({
   offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
   url: SITE.url + `/${locale}/`,
   description: d.meta.landingDescription,
+  author,
+  copyrightHolder: author,
 });
 ---
 

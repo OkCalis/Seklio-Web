@@ -278,7 +278,7 @@ export const tr: Dict = {
     resources: 'Kaynaklar',
     legal: 'Gizlilik ve Destek',
     language: 'Dil',
-    rights: '© 2026 Seklio. Tüm hakları saklıdır.',
+    rights: '© 2026 Okan Çalış. Tüm hakları saklıdır.',
   },
 
   notFound: {
