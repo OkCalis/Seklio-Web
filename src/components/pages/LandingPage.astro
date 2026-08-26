@@ -191,9 +191,13 @@ const structuredData = JSON.stringify({
           <h3>{d.download.androidTitle}</h3>
           <p>{d.download.androidBody}</p>
           <div class="btn-stack">
-            <a class="btn btn-primary" href={SITE.alphaGroupUrl}>{d.download.alphaCta}</a>
+            <a class="btn btn-primary" href={SITE.alphaGroupUrl} target="_blank" rel="noopener">
+              {d.download.alphaCta}
+            </a>
             <p class="wait-note">{d.download.playWaitNote}</p>
-            <a class="btn btn-primary" href={SITE.playStoreUrl}>{d.download.playCta}</a>
+            <a class="btn btn-primary" href={SITE.playStoreUrl} target="_blank" rel="noopener">
+              {d.download.playCta}
+            </a>
             <p class="wait-note">{d.download.apkAltNote}</p>
             <a class="btn btn-secondary" href={SITE.androidApkUrl} data-apk-button>
               {d.download.androidCta}
