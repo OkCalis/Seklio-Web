@@ -83,7 +83,11 @@ export const en = {
         icon: 'circles',
         title: 'Circles',
         body: 'Private encrypted groups with QR-code invites. Only invited members hold the key; relays can’t peek.',
-        soon: true,
+      },
+      {
+        icon: 'react',
+        title: 'Replies & reactions',
+        body: 'Quote any message to answer it in place, and react with any emoji. Works in chats, Circles, and broadcasts alike.',
       },
       {
         icon: 'megaphone',
@@ -171,8 +175,12 @@ export const en = {
         a: 'Yes. Android is in alpha on Google Play, in two steps: join the “Seklio Alpha Channel” Google Group, then install from the Play listing with the same Google account. Membership can take a while to reach Google Play, so if the listing says the app isn’t available yet, wait a bit and try again. The alpha APK is also downloadable directly from our GitHub Releases page, no group needed. iOS is in public beta on TestFlight. The two platforms speak the same open wire protocol, so they join the same mesh.',
       },
       {
+        q: 'What are Circles?',
+        a: 'Circles are Seklio’s private groups: end-to-end encrypted, invite-only, and serverless like everything else. Invites are signed QR “slips” from the admin: scan one in person, or receive it in a chat. Only invited members hold the group key, so relaying phones can’t read anything. Anyone can join unlimited Circles, and every account can admin up to 2 at a time for free.',
+      },
+      {
         q: 'What does Premium add?',
-        a: 'Premium is coming soon, together with Circles. It will be for people who run Circles: creating encrypted groups and admin features like invites and member management. Messaging, joining Circles, broadcasts, photos — all of that stays free, forever.',
+        a: 'Messaging is free: chats, Circles, broadcasts, photos, replies, reactions — all of it. Managing Circles is free too: every account can be the admin of up to 2 Circles at the same time, with full admin powers. Premium removes that limit, for people who run many Circles at once. It comes as a lifetime unlock, a monthly plan with a 7-day free trial, or a yearly plan billed monthly where the store supports it. If premium ever lapses, you keep 2 managed Circles and nothing is deleted. One note: the sideloaded APK build can’t make purchases (there’s no Google Play billing on it), so it always runs the free tier.',
       },
       {
         q: 'Is my chat history backed up somewhere?',
@@ -216,7 +224,7 @@ export const en = {
       {
         h: 'Purchases',
         ps: [
-          'Premium purchases are processed entirely by Apple (App Store) or the store you bought the app through. We never see your payment details. Entitlement checks happen on your device.',
+          'Premium purchases are processed entirely by Apple (App Store) or Google (Google Play). We never see your payment details. Entitlement checks happen on your device.',
         ],
       },
       {

@@ -85,7 +85,11 @@ export const tr: Dict = {
         icon: 'circles',
         title: 'Çevreler',
         body: 'QR kodla davet edilen özel şifreli gruplar. Anahtar yalnızca davetli üyelerde; aradaki cihazlar içeriyi göremez.',
-        soon: true,
+      },
+      {
+        icon: 'react',
+        title: 'Yanıtlar ve tepkiler',
+        body: 'Herhangi bir mesajı alıntılayarak yerinde yanıtla, dilediğin emojiyle tepki ver. Sohbetlerde, Çevrelerde ve duyurularda geçerli.',
       },
       {
         icon: 'megaphone',
@@ -173,8 +177,12 @@ export const tr: Dict = {
         a: 'Evet. Android şu an Google Play’de alfa aşamasında ve erişim iki adımlı: önce “Seklio Alpha Channel” Google Grubu’na katılıyorsun, ardından uygulamayı aynı Google hesabıyla Play sayfasından yüklüyorsun. Üyeliğinin Google Play’e işlemesi biraz zaman alabilir; sayfa uygulamanın henüz kullanılamadığını söylerse bir süre bekleyip yeniden dene. Alfa APK’sını gruba üye olmadan, doğrudan GitHub Releases sayfamızdan da indirebilirsin. iOS ise TestFlight’ta açık betada. İki platform aynı açık iletişim protokolünü konuşur, yani aynı örgü ağa katılırlar.',
       },
       {
+        q: 'Çevre nedir?',
+        a: 'Çevreler, Seklio’nun özel grupları: uçtan uca şifreli, davetle katılınan ve diğer her şey gibi sunucusuz. Davetler, yöneticinin imzaladığı QR “davetiye”leridir: yüz yüze okut ya da sohbetten al. Grup anahtarı yalnızca davetli üyelerde olduğundan aradaki telefonlar hiçbir şeyi okuyamaz. Herkes sınırsız Çevreye katılabilir; her hesap aynı anda 2 Çevreye kadar ücretsiz yöneticilik yapabilir.',
+      },
+      {
         q: 'Premium ne katıyor?',
-        a: 'Premium, Çevrelerle birlikte çok yakında geliyor. Çevre yönetenler için olacak: şifreli grup oluşturma ile davet ve üye yönetimi gibi yöneticilik özellikleri. Mesajlaşma, Çevrelere katılma, duyurular, fotoğraflar — bunların hepsi sonsuza kadar ücretsiz kalacak.',
+        a: 'Mesajlaşma ücretsiz: sohbetler, Çevreler, duyurular, fotoğraflar, yanıtlar, tepkiler — hepsi. Çevre yönetmek de ücretsiz: her hesap aynı anda 2 Çevreye kadar, tüm yetkileriyle yöneticilik yapabilir. Premium bu sınırı kaldırır; aynı anda çok sayıda Çevre yönetenler için. Ömür boyu tek seferlik satın alma, 7 günlük ücretsiz deneme içeren aylık plan ya da mağazanın desteklediği yerlerde aylık ödemeli yıllık plan olarak sunulur. Premium sona ererse yönettiğin 2 Çevre sende kalır ve hiçbir şey silinmez. Bir not: elden kurulan APK sürümünde satın alma yapılamaz (Google Play faturalandırması yok); o sürüm her zaman ücretsiz katmanda çalışır.',
       },
       {
         q: 'Sohbet geçmişim bir yere yedekleniyor mu?',
@@ -218,7 +226,7 @@ export const tr: Dict = {
       {
         h: 'Satın almalar',
         ps: [
-          'Premium satın almaları tamamen Apple (App Store) ya da uygulamayı edindiğin mağaza tarafından işlenir. Ödeme bilgilerini asla görmeyiz. Yetki kontrolleri cihazında gerçekleşir.',
+          'Premium satın almaları tamamen Apple (App Store) ya da Google (Google Play) tarafından işlenir. Ödeme bilgilerini asla görmeyiz. Yetki kontrolleri cihazında gerçekleşir.',
         ],
       },
       {

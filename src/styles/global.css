@@ -387,7 +387,7 @@ html[data-platform='android'] .hero-ctas .plat-android {
 /* ---------- Feature grid ---------- */
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
