@@ -19,6 +19,12 @@ export const SITE = {
   playStoreUrl: 'https://play.google.com/store/apps/details?id=io.sekl.seklio.app',
 
   contactEmail: 'support@sekl.io',
+
+  author: {
+    name: 'Okan Çalış',
+    linkedin: 'https://www.linkedin.com/in/okancalis',
+    github: 'https://github.com/OkCalis',
+  },
 } as const;
 
 export const LOCALES = ['en', 'tr'] as const;

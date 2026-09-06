@@ -13,9 +13,9 @@ const d = t(locale);
 
 const author = {
   '@type': 'Person',
-  name: 'Okan Çalış',
-  url: 'https://www.linkedin.com/in/okancalis',
-  sameAs: ['https://www.linkedin.com/in/okancalis', 'https://github.com/OkCalis'],
+  name: SITE.author.name,
+  url: SITE.url + `/${locale}/about/`,
+  sameAs: [SITE.author.linkedin, SITE.author.github],
 };
 
 const structuredData = JSON.stringify({

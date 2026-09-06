@@ -1,0 +1,66 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE, type Locale } from '../../config';
+import { t } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale);
+
+const render = (p: string) =>
+  p
+    .replace('{email}', `<a href="mailto:${SITE.contactEmail}">${SITE.contactEmail}</a>`)
+    .replace('{linkedin}', `<a href="${SITE.author.linkedin}" rel="me noopener">LinkedIn</a>`)
+    .replace('{github}', `<a href="${SITE.author.github}" rel="me noopener">GitHub</a>`);
+
+const profile = JSON.stringify({
+  '@context': 'https://schema.org',
+  '@type': 'ProfilePage',
+  url: SITE.url + `/${locale}/about/`,
+  mainEntity: {
+    '@type': 'Person',
+    name: SITE.author.name,
+    url: SITE.url + `/${locale}/about/`,
+    email: SITE.contactEmail,
+    sameAs: [SITE.author.linkedin, SITE.author.github],
+    jobTitle: locale === 'tr' ? 'Bağımsız geliştirici' : 'Independent developer',
+    knowsAbout: ['Seklio', 'mesh networking', 'end-to-end encryption', 'iOS', 'Android'],
+  },
+  about: {
+    '@type': 'SoftwareApplication',
+    name: SITE.name,
+    url: SITE.url + `/${locale}/`,
+    author: { '@type': 'Person', name: SITE.author.name },
+  },
+});
+---
+
+<BaseLayout
+  locale={locale}
+  slug="about"
+  title={d.aboutPage.metaTitle}
+  description={d.aboutPage.metaDescription}
+>
+  <div class="page-hero">
+    <div class="container">
+      <h1>{d.aboutPage.title}</h1>
+      <p>{d.aboutPage.intro}</p>
+    </div>
+  </div>
+  <div class="prose">
+    {
+      d.aboutPage.sections.map((s) => (
+        <>
+          <h2>{s.h}</h2>
+          {s.ps.map((p) => (
+            <p set:html={render(p)} />
+          ))}
+        </>
+      ))
+    }
+  </div>
+  <script is:inline type="application/ld+json" set:html={profile} />
+</BaseLayout>
