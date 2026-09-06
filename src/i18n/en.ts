@@ -284,30 +284,7 @@ export const en = {
     resources: 'Resources',
     legal: 'Privacy & Support',
     language: 'Language',
-  },
-
-  aboutPage: {
-    navTitle: 'About',
-    metaTitle: 'Okan Çalış — the person behind Seklio',
-    metaDescription:
-      'Seklio, the serverless mesh messenger for iOS and Android, is designed and built by Okan Çalış, an independent developer.',
-    title: 'Okan Çalış',
-    intro: 'The person behind Seklio.',
-    sections: [
-      {
-        h: 'Who makes Seklio',
-        ps: [
-          'Seklio is designed and built by Okan Çalış, an independent developer. It began with one question: what would messaging look like if it needed no servers, no accounts, and no internet at all? The answer is a serverless mesh messenger for iOS and Android, where nearby phones carry each other’s end-to-end encrypted messages.',
-          'Everything on this site describes that project: how the mesh works, what stays on your device, and how to join the beta.',
-        ],
-      },
-      {
-        h: 'Get in touch',
-        ps: [
-          'Questions, bug reports, or ideas about Seklio: write to {email}. You can also find Okan Çalış on {linkedin} and {github}.',
-        ],
-      },
-    ],
+    rights: '© 2026 Okan Çalış',
   },
 
   notFound: {

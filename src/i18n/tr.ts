@@ -286,30 +286,7 @@ export const tr: Dict = {
     resources: 'Kaynaklar',
     legal: 'Gizlilik ve Destek',
     language: 'Dil',
-  },
-
-  aboutPage: {
-    navTitle: 'Hakkında',
-    metaTitle: 'Okan Çalış — Seklio’nun arkasındaki kişi',
-    metaDescription:
-      'iOS ve Android için sunucusuz örgü ağ mesajlaşma uygulaması Seklio, bağımsız geliştirici Okan Çalış tarafından tasarlanıp geliştiriliyor.',
-    title: 'Okan Çalış',
-    intro: 'Seklio’nun arkasındaki kişi.',
-    sections: [
-      {
-        h: 'Seklio’yu kim yapıyor',
-        ps: [
-          'Seklio, bağımsız geliştirici Okan Çalış tarafından tasarlanıp geliştiriliyor. Her şey tek bir soruyla başladı: sunucuya, hesaba ve internete hiç ihtiyaç duymayan bir mesajlaşma nasıl olurdu? Cevap, yakındaki telefonların birbirinin uçtan uca şifreli mesajlarını taşıdığı, iOS ve Android için sunucusuz bir örgü ağ mesajlaşma uygulaması.',
-          'Bu sitedeki her şey o projeyi anlatıyor: örgü ağ nasıl çalışır, cihazında neler kalır ve betaya nasıl katılırsın.',
-        ],
-      },
-      {
-        h: 'İletişim',
-        ps: [
-          'Seklio hakkında soru, hata bildirimi ya da fikir için {email} adresine yaz. Okan Çalış’a {linkedin} ve {github} üzerinden de ulaşabilirsin.',
-        ],
-      },
-    ],
+    rights: '© 2026 Okan Çalış',
   },
 
   notFound: {
