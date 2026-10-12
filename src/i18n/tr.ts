@@ -11,6 +11,9 @@ export const tr: Dict = {
     privacyDescription: 'Seklio’nun gizlilik politikası: sunucu yok, dolayısıyla toplanacak bir şey de yok.',
     supportTitle: 'Destek — Seklio',
     supportDescription: 'Seklio için yardım: SSS, hata bildirimi ve iletişim.',
+    seralinkTitle: 'Seralink — Seklio’nun arkasındaki paylaşımlı aktarım ağı',
+    seralinkDescription:
+      'Seralink, Seklio telefonlarıyla ortak örgü ağ mesajlaşma uygulamalarının birbirlerinin mühürlü zarflarını taşımasını sağlar: herkesin menzili uzar, sunucu yoktur ve başka hiçbir şey paylaşılmaz.',
   },
 
   nav: {
@@ -279,6 +282,60 @@ export const tr: Dict = {
   },
 
   langNames: { en: 'English', tr: 'Türkçe' },
+
+  seralinkPage: {
+    navTitle: 'Seralink',
+    title: 'Seralink',
+    intro: 'Seklio’nun arkasındaki paylaşımlı aktarım ağı.',
+    sections: [
+      {
+        h: 'Kısa özet',
+        ps: [
+          'Seklio telefonları, bir mesaj doğrudan menzilinde olmayan birine ulaşabilsin diye birbirlerinin mühürlü mesajlarını taşır. Seralink bunu ortak uygulamalara genişletir: aynı taşıma protokolünü konuşan, başka geliştiricilerin yaptığı mesajlaşma uygulamaları. Bir Seklio telefonu bir ortak uygulamanın mühürlü zarflarını, bir ortak uygulamanın telefonu da Seklio’nunkileri taşıyabilir. Başka hiçbir şey paylaşılmaz.',
+          'Bir örgü ağ, içindeki telefon sayısı kadar iyidir. Telefonları birbiri için taşıyan iki uygulama, her birinin tek başına ulaşabileceğinden daha uzağa ulaşır; iki tarafta da sunucu olmadan.',
+        ],
+      },
+      {
+        h: 'Bir Seralink telefonu ne yapar',
+        items: [
+          'Açamadığı mühürlü zarfları taşır. Bir ortak uygulamanın zarflarını tıpkı başka Seklio kullanıcılarının zarfları gibi tutar: mühürlü, sınırlı bir süre için ve alıcıya daha yakın bir telefonla karşılaştığında ileterek. Senin mesajlarını taşıyan ortak uygulama telefonları da seninkileri okuyamaz.',
+          'Sabit sınırlar içinde kalır: saatte kaç bayt, kaç zarf, tek bir zarfın en fazla ne kadar büyük olabileceği ve bir kopyanın ne kadar süre tutulacağı (en fazla 12 saat). Sınırları geliştiricinin imzaladığı ve uygulamanın doğruladığı bir ilke belirler; sınırlar yalnızca uygulamaya gömülü üst sınırların içinde hareket edebilir.',
+          'Seklio’nun içinde asla görünmez. Ortak uygulamalardan ne mesaj, ne kişi, ne ad gelir; Seralink yalnızca mühürlü zarfları telefonlar arasında taşır.',
+          'Başka Seklio kullanıcıları için aktarım kadar tutar: biraz radyo süresi, biraz depolama alanı, yukarıdaki sınırlar içinde. Kopyalar kendiliğinden silinir.',
+        ],
+      },
+      {
+        h: 'Seralink ne yapmaz',
+        items: [
+          'Hesap yok, sunucu yok, uygulamalar arasında paylaşılan kimlik yok. Bir ortak uygulama senin kim olduğunu öğrenemez; Seklio da onun kullanıcılarının kim olduğunu öğrenemez.',
+          'Hangi uygulamayı çalıştırırsa çalıştırsın, aktaran bir telefon hiçbir içeriği okuyamaz.',
+          'Bir ortak uygulama Seklio’nun içinde sana mesaj gönderemez, sohbetlerini göremez.',
+        ],
+      },
+      {
+        h: 'Açmak ve kapatmak',
+        ps: [
+          'Paylaşımlı aktarım Seklio’nun her sürümüne gömülüdür ve kapalı başlar. Geliştirici yeni bir sürüm yayımlayarak açar, sınırları ayarlar ya da yeniden kapatır; uygulama çalışırken hiçbir şey değişmez. Kendi telefonundaki durumu Profil → Tanılama → Aktarım paylaşımı altında görebilirsin.',
+        ],
+      },
+      {
+        h: 'Ortak uygulamalar',
+        ps: ['Seralink’te henüz yayında olan bir ortak uygulama yok. Uygulamalar katıldıkça burada listelenecek.'],
+      },
+      {
+        h: 'Geliştiriciler için',
+        ps: [
+          'Seralink açık bir taşıma protokolüdür: mühürlü bir zarf biçimi, telefonlar arasında bir bağlantı el sıkışması ve her aktarıcının uyguladığı kabul kuralları. Bir örgü ağ mesajlaşma uygulaması geliştiriyorsan ve kullanıcılarının telefonlarıyla Seklio’nunkilerin birbiri için taşımasını istiyorsan {email} adresine yaz.',
+        ],
+      },
+      {
+        h: 'Sözleşmen',
+        ps: [
+          'Seklio kullanıcıları ve ortak uygulamalar için aktarım, Seklio’yu kullanmanın bir parçasıdır. Koşullar Kullanıcı Sözleşmesi’nde (3. ve 4. bölümler), telefonunda kalanlar ise {privacy} sayfasında.',
+        ],
+      },
+    ],
+  },
 
   footer: {
     tagline: 'Sunucusuz örgü ağ mesajlaşması. Hesap yok, sunucu yok — sadece birbirine yardım eden telefonlar.',

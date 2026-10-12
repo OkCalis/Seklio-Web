@@ -9,6 +9,9 @@ export const en = {
     privacyDescription: 'Seklio’s privacy policy: there are no servers, so there is nothing to collect.',
     supportTitle: 'Support — Seklio',
     supportDescription: 'Get help with Seklio: FAQ, bug reports, and contact.',
+    seralinkTitle: 'Seralink — the shared relay network behind Seklio',
+    seralinkDescription:
+      'Seralink lets Seklio phones and partner mesh messengers carry each other’s sealed envelopes, extending everyone’s reach with no servers and nothing else shared.',
   },
 
   nav: {
@@ -277,6 +280,60 @@ export const en = {
   },
 
   langNames: { en: 'English', tr: 'Türkçe' },
+
+  seralinkPage: {
+    navTitle: 'Seralink',
+    title: 'Seralink',
+    intro: 'The shared relay network behind Seklio.',
+    sections: [
+      {
+        h: 'The short version',
+        ps: [
+          'Seklio phones carry each other’s sealed messages so that a message can reach someone outside your direct range. Seralink extends that to partner apps: messengers built by other developers that speak the same carriage protocol. A Seklio phone may carry a partner app’s sealed envelopes, and a partner app’s phone may carry Seklio’s. Nothing else is shared.',
+          'A mesh is only as good as the number of phones in it. Two apps whose phones carry for each other reach further than either could alone, with no servers on either side.',
+        ],
+      },
+      {
+        h: 'What a Seralink phone does',
+        items: [
+          'Carries sealed envelopes it cannot open. A partner app’s envelopes are held exactly like other Seklio users’: sealed, for a limited time, and passed on when a phone closer to the recipient comes along. Partner phones carrying your messages cannot read yours either.',
+          'Stays within fixed limits: how many bytes per hour, how many envelopes, how large a single envelope may be, and how long a copy is held (at most 12 hours). The limits come from a policy signed by the developer and verified by the app, and they can only move within maximums built into the app.',
+          'Never shows up inside Seklio. No messages, no contacts, no names from partner apps; Seralink only moves sealed envelopes between phones.',
+          'Costs about what relaying for other Seklio users costs: a little radio time, a little storage, within the limits above. Copies expire on their own.',
+        ],
+      },
+      {
+        h: 'What Seralink does not do',
+        items: [
+          'No accounts, no servers, no identity shared between apps. A partner app cannot learn who you are, and Seklio cannot learn who its users are.',
+          'No content is ever readable by a relaying phone, whichever app it runs.',
+          'No way for a partner app to message you inside Seklio, or to see your conversations.',
+        ],
+      },
+      {
+        h: 'Switching it on and off',
+        ps: [
+          'Shared relaying is built into every version of Seklio, and it starts switched off. The developer switches it on, adjusts the limits, or switches it off again by shipping a new version; nothing changes while the app is running. You can see the state on your own phone under Profile → Diagnostics → Relay sharing.',
+        ],
+      },
+      {
+        h: 'Partner apps',
+        ps: ['No partner app is live on Seralink yet. Apps will be listed here as they join.'],
+      },
+      {
+        h: 'For developers',
+        ps: [
+          'Seralink is an open carriage protocol: a sealed envelope format, a link handshake between phones, and admission rules every relay enforces. If you build a mesh messenger and want your users’ phones and Seklio’s to carry for each other, write to {email}.',
+        ],
+      },
+      {
+        h: 'Your agreement',
+        ps: [
+          'Relaying, for Seklio users and for partner apps, is part of using Seklio. The terms are in the User Agreement (sections 3 and 4), and what stays on your phone is in the {privacy}.',
+        ],
+      },
+    ],
+  },
 
   footer: {
     tagline: 'Serverless mesh messaging. No accounts, no servers — just phones helping phones.',

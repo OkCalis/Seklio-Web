@@ -1,0 +1,48 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SITE, type Locale } from '../../config';
+import { t } from '../../i18n';
+
+interface Props {
+  locale: Locale;
+}
+
+const { locale } = Astro.props;
+const d = t(locale);
+
+const render = (p: string) =>
+  p
+    .replace('{email}', `<a href="mailto:${SITE.contactEmail}">${SITE.contactEmail}</a>`)
+    .replace('{privacy}', `<a href="/${locale}/privacy/">${d.privacyPage.title}</a>`);
+---
+
+<BaseLayout
+  locale={locale}
+  slug="seralink"
+  title={d.meta.seralinkTitle}
+  description={d.meta.seralinkDescription}
+>
+  <div class="page-hero">
+    <div class="container">
+      <h1>{d.seralinkPage.title}</h1>
+      <p>{d.seralinkPage.intro}</p>
+    </div>
+  </div>
+  <div class="prose">
+    {
+      d.seralinkPage.sections.map((s) => (
+        <>
+          <h2>{s.h}</h2>
+          {'ps' in s && s.ps?.map((p) => <p set:html={render(p)} />)}
+          {'items' in s && s.items && (
+            <ul>
+              {s.items.map((item) => (
+                <li set:html={render(item)} />
+              ))}
+            </ul>
+          )}
+        </>
+      ))
+    }
+  </div>
+</BaseLayout>

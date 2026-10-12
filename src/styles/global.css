@@ -663,6 +663,16 @@ html[data-platform='android'] .hero-ctas .plat-android {
   margin: 0 0 1em;
 }
 
+.prose ul {
+  color: var(--ink-soft);
+  margin: 0 0 1em;
+  padding-left: 1.3em;
+}
+
+.prose li {
+  margin-bottom: 0.6em;
+}
+
 /* ---------- Footer ---------- */
 .site-footer {
   border-top: 1px solid var(--card-border);
