@@ -124,6 +124,13 @@ export const tr: Dict = {
     link: 'Gizlilik politikasını oku',
   },
 
+  seralinkTeaser: {
+    eyebrow: 'Seralink',
+    title: 'Ortak uygulamalarla paylaşılan, daha büyük bir örgü ağ.',
+    body: 'Seralink sayesinde başka örgü ağ mesajlaşma uygulamalarını çalıştıran telefonlar Seklio’nun mühürlü zarflarını, Seklio telefonları da onlarınkini taşır. Daha çok telefon, daha uzun menzil; yine sunucu yok, uygulamalar arasında okunabilen ya da paylaşılan hiçbir şey yok.',
+    link: 'Seralink hakkında bilgi al',
+  },
+
   download: {
     title: 'Betayı dene',
     subtitle: 'iOS açık betada; Android alfa aşamasında.',
@@ -150,6 +157,10 @@ export const tr: Dict = {
       {
         q: 'Menzili ne kadar?',
         a: 'Doğrudan bağlantı, Bluetooth’un ya da yerel Wi-Fi ağının eriştiği yere kadar uzanır. Ama mesajlar orada durmaz: her telefon onları bir sonrakine iletir, yani gerçek menzilin bağlı örgü ağın tamamıdır; bir mesaj alıcısını bulmak için 7 telefona kadar (duyurularda 15) sekebilir.',
+      },
+      {
+        q: 'Seralink nedir?',
+        a: 'Seralink, Seklio’nun arkasındaki paylaşımlı aktarım ağı. Ortak örgü ağ mesajlaşma uygulamalarını çalıştıran telefonlar Seklio’nun mühürlü zarflarını, Seklio telefonları da onlarınkini taşıyabilir; böylece herkesin mesajı daha uzağa ulaşır. Aktaran telefonlar taşıdıklarını okuyamaz, uygulamalar arasında ne kimlik ne içerik paylaşılır ve bir ortak uygulamadan Seklio’nun içine hiçbir şey gelmez. Henüz yayında bir ortak uygulama yok; ayrıntılar sekl.io/seralink adresinde.',
       },
       {
         q: 'Gerçekten gizli mi?',
@@ -216,7 +227,7 @@ export const tr: Dict = {
         h: 'Cihazında kalanlar',
         ps: [
           'Profilin (kullanıcı adı, avatar, isteğe bağlı yaş beyanı), sohbetlerin, anahtarların ve ayarların telefonunda yerel olarak, cihazının güvenlik mekanizmalarıyla (Keychain / Keystore) korunarak saklanır.',
-          'Alıcılarla paylaştığın mesajlar, her mesajlaşma uygulamasında olduğu gibi onların cihazlarında da bulunur. Henüz teslim edilmemiş mesajların şifreli kopyaları, örgü ağdaki aracı telefonlarda geçici olarak bekleyebilir; bu telefonlar onları okuyamaz.',
+          'Alıcılarla paylaştığın mesajlar, her mesajlaşma uygulamasında olduğu gibi onların cihazlarında da bulunur. Henüz teslim edilmemiş mesajların şifreli kopyaları, örgü ağdaki aracı telefonlarda (Seralink üzerinden bağlı ortak uygulamaları çalıştıran telefonlar dahil) geçici olarak bekleyebilir; bu telefonlar onları okuyamaz.',
         ],
       },
       {

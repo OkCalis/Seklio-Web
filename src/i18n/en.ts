@@ -122,6 +122,13 @@ export const en = {
     link: 'Read the privacy policy',
   },
 
+  seralinkTeaser: {
+    eyebrow: 'Seralink',
+    title: 'A bigger mesh, shared with partner apps.',
+    body: 'Seralink lets phones running other mesh messengers carry Seklio’s sealed envelopes, and Seklio phones carry theirs. More phones, more reach; still no servers, and nothing readable or shared between apps.',
+    link: 'Learn about Seralink',
+  },
+
   download: {
     title: 'Try the beta',
     subtitle: 'iOS is in public beta; Android is in alpha.',
@@ -148,6 +155,10 @@ export const en = {
       {
         q: 'How far does it reach?',
         a: 'A direct link reaches as far as Bluetooth or your local Wi-Fi network does. But messages don’t stop there: each phone relays them onward, so your real reach is the whole connected mesh; a message can hop through up to 7 phones (15 for broadcasts) to find its recipient.',
+      },
+      {
+        q: 'What is Seralink?',
+        a: 'Seralink is the shared relay network behind Seklio. Phones running partner mesh messengers can carry Seklio’s sealed envelopes, and Seklio phones can carry theirs, so everyone’s messages reach further. Relaying phones can’t read what they carry, no identity or content is shared between apps, and nothing from a partner app ever shows up inside Seklio. No partner app is live yet; details at sekl.io/seralink.',
       },
       {
         q: 'Is it really private?',
@@ -214,7 +225,7 @@ export const en = {
         h: 'What stays on your device',
         ps: [
           'Your profile (handle, avatar, optional birth-year attestation), your conversations, your keys, and your settings are stored locally on your phone, protected by your device’s security (Keychain / Keystore).',
-          'Messages you exchange are also stored on the recipients’ devices, as with any messenger. Encrypted copies of undelivered messages may temporarily sit on relaying phones in the mesh; those phones cannot read them.',
+          'Messages you exchange are also stored on the recipients’ devices, as with any messenger. Encrypted copies of undelivered messages may temporarily sit on relaying phones in the mesh, including phones running partner apps connected through Seralink; those phones cannot read them.',
         ],
       },
       {
