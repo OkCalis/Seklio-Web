@@ -332,12 +332,6 @@ export const en = {
         ps: ['No partner app is live on Seralink yet. Apps will be listed here as they join.'],
       },
       {
-        h: 'For developers',
-        ps: [
-          'Seralink is an open carriage protocol: a sealed envelope format, a link handshake between phones, and admission rules every relay enforces. If you build a mesh messenger and want your users’ phones and Seklio’s to carry for each other, write to {email}.',
-        ],
-      },
-      {
         h: 'Your agreement',
         ps: [
           'Relaying, for Seklio users and for partner apps, is part of using Seklio. The terms are in the User Agreement (sections 3 and 4), and what stays on your phone is in the {privacy}.',

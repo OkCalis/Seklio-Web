@@ -334,12 +334,6 @@ export const tr: Dict = {
         ps: ['Seralink’te henüz yayında olan bir ortak uygulama yok. Uygulamalar katıldıkça burada listelenecek.'],
       },
       {
-        h: 'Geliştiriciler için',
-        ps: [
-          'Seralink açık bir taşıma protokolüdür: mühürlü bir zarf biçimi, telefonlar arasında bir bağlantı el sıkışması ve her aktarıcının uyguladığı kabul kuralları. Bir örgü ağ mesajlaşma uygulaması geliştiriyorsan ve kullanıcılarının telefonlarıyla Seklio’nunkilerin birbiri için taşımasını istiyorsan {email} adresine yaz.',
-        ],
-      },
-      {
         h: 'Sözleşmen',
         ps: [
           'Seklio kullanıcıları ve ortak uygulamalar için aktarım, Seklio’yu kullanmanın bir parçasıdır. Koşullar Kullanıcı Sözleşmesi’nde (3. ve 4. bölümler), telefonunda kalanlar ise {privacy} sayfasında.',
