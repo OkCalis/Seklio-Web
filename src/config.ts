@@ -23,3 +23,6 @@ export const SITE = {
 
 export const LOCALES = ['en', 'tr'] as const;
 export type Locale = (typeof LOCALES)[number];
+
+/** Open Graph locale tags (language_TERRITORY), per site locale. */
+export const OG_LOCALES: Record<Locale, string> = { en: 'en_US', tr: 'tr_TR' };

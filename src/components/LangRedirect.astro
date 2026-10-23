@@ -6,7 +6,7 @@
 // Link-preview crawlers (WhatsApp, iMessage, Slack...) don't run the
 // redirect script, so this page carries the English page's Open Graph
 // metadata itself; otherwise a shared bare URL previews as a blank card.
-import { SITE } from '../config';
+import { SITE, OG_LOCALES } from '../config';
 import { t } from '../i18n';
 
 interface Props {
@@ -42,6 +42,8 @@ const url = `${SITE.url}/${slug}`;
     <link rel="alternate" hreflang="x-default" href={`https://sekl.io/${slug}`} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content={OG_LOCALES.en} />
+    <meta property="og:locale:alternate" content={OG_LOCALES.tr} />
     <meta property="og:title" content={meta.title} />
     <meta property="og:description" content={meta.description} />
     <meta property="og:url" content={url} />

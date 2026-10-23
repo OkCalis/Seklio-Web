@@ -1,6 +1,6 @@
 ---
 import '../styles/global.css';
-import { SITE, LOCALES, type Locale } from '../config';
+import { SITE, LOCALES, OG_LOCALES, type Locale } from '../config';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 
@@ -31,6 +31,12 @@ const canonical = SITE.url + path(locale);
     <link rel="alternate" hreflang="x-default" href={SITE.url + '/'} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:locale" content={OG_LOCALES[locale]} />
+    {
+      LOCALES.filter((l) => l !== locale).map((l) => (
+        <meta property="og:locale:alternate" content={OG_LOCALES[l]} />
+      ))
+    }
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonical} />
