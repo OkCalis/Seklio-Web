@@ -2,12 +2,29 @@
 // Language chooser for a prefixless URL: redirects to /en/<slug> or
 // /tr/<slug> based on a remembered choice or the browser language.
 // The noscript fallback goes to the English page.
+//
+// Link-preview crawlers (WhatsApp, iMessage, Slack...) don't run the
+// redirect script, so this page carries the English page's Open Graph
+// metadata itself; otherwise a shared bare URL previews as a blank card.
+import { SITE } from '../config';
+import { t } from '../i18n';
+
 interface Props {
   /** Path below the locale prefix, with trailing slash — e.g. '' | 'faq/' | 'support/'. */
   slug: string;
 }
 
 const { slug } = Astro.props;
+const en = t('en');
+const metaBySlug: Record<string, { title: string; description: string }> = {
+  '': { title: en.meta.landingTitle, description: en.meta.landingDescription },
+  'faq/': { title: en.meta.faqTitle, description: en.meta.faqDescription },
+  'privacy/': { title: en.meta.privacyTitle, description: en.meta.privacyDescription },
+  'support/': { title: en.meta.supportTitle, description: en.meta.supportDescription },
+  'seralink/': { title: en.meta.seralinkTitle, description: en.meta.seralinkDescription },
+};
+const meta = metaBySlug[slug] ?? metaBySlug[''];
+const url = `${SITE.url}/${slug}`;
 ---
 
 <!doctype html>
@@ -15,13 +32,21 @@ const { slug } = Astro.props;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Seklio</title>
+    <title>{meta.title}</title>
+    <meta name="description" content={meta.description} />
     <meta name="robots" content="noindex" />
     <link rel="icon" type="image/png" href="/favicon.png" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="alternate" hreflang="en" href={`https://sekl.io/en/${slug}`} />
     <link rel="alternate" hreflang="tr" href={`https://sekl.io/tr/${slug}`} />
     <link rel="alternate" hreflang="x-default" href={`https://sekl.io/${slug}`} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content={SITE.name} />
+    <meta property="og:title" content={meta.title} />
+    <meta property="og:description" content={meta.description} />
+    <meta property="og:url" content={url} />
+    <meta property="og:image" content={SITE.url + '/og-image.jpg'} />
+    <meta name="twitter:card" content="summary" />
     <script is:inline define:vars={{ slug }}>
       let lang = null;
       try {
