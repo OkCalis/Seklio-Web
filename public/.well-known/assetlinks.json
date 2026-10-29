@@ -1,0 +1,15 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.get_login_creds",
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.sekl.seklio.app",
+      "sha256_cert_fingerprints": [
+        "A7:35:02:2C:62:E4:AF:35:CE:EB:86:27:F5:DE:55:4E:05:76:14:33:86:0F:BC:A6:E6:6A:81:DD:0C:BD:7C:67"
+      ]
+    }
+  }
+]
