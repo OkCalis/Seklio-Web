@@ -8,7 +8,10 @@
       "namespace": "android_app",
       "package_name": "io.sekl.seklio.app",
       "sha256_cert_fingerprints": [
-        "A7:35:02:2C:62:E4:AF:35:CE:EB:86:27:F5:DE:55:4E:05:76:14:33:86:0F:BC:A6:E6:6A:81:DD:0C:BD:7C:67"
+        "A7:35:02:2C:62:E4:AF:35:CE:EB:86:27:F5:DE:55:4E:05:76:14:33:86:0F:BC:A6:E6:6A:81:DD:0C:BD:7C:67",
+        "8A:37:1A:53:AD:10:8A:98:B8:B8:EF:B5:5E:CA:F9:0D:F5:6C:CF:1A:3B:B8:4B:5E:F3:D6:57:CB:EE:35:FC:78",
+        "1E:9F:6F:04:FA:43:FE:AD:86:FB:8B:9B:49:C6:FC:1F:FC:98:E0:86:C4:B2:00:EB:8E:0A:3A:13:4A:75:55:C0",
+        "6E:45:5F:3C:5E:E4:61:E1:55:62:BF:0E:01:6F:48:E4:EA:12:27:D9:10:EC:69:D2:49:9F:9E:96:3D:33:6C:AA"
       ]
     }
   }
